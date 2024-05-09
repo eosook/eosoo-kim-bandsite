@@ -1,0 +1,413 @@
+@use 'partials/colors' as *;
+@use 'partials/fonts' as *;
+@use 'partials/responsive' as *;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: avenirRegular;
+}
+
+img{
+    width: 100vw;
+}
+
+.bandsite--logo{
+    width: 120px;
+    height: 20px;
+}
+
+.header{
+    background-color: $primary-black;
+    color: $primary-white;
+    text-align: center;
+    width: 100dvw;
+
+    @include tablet{
+        display: flex;
+        align-items: center;
+        padding: 0 36px;
+    }
+
+    @include desktop{
+        padding: 0 150px;
+    }
+
+    .bandsite--logo{
+        margin: 16px 0 8px;
+
+        @include tablet{
+            margin: 0;
+        }
+    }
+
+    &__nav{
+        @include tablet{
+            width: 30vw;
+            margin-left: 24px;
+        }
+
+        &--list{
+            display: flex;
+            color: $primary-silver;
+
+            @include tablet{
+                height: 100%;
+            }
+        }
+
+        &--page{
+            width: 50%;
+            list-style-type: none;
+            box-sizing: border-box;
+            padding-bottom: 11px;
+            border-bottom: 5px solid transparent;
+
+            @include tablet{
+                margin: 0 24px;
+                width: auto;
+                height: 100%;
+                padding-bottom: 0;
+                padding: 32px 0 29px;
+                border-bottom: 3px solid transparent;
+            }
+
+            &:hover{
+                border-bottom: 5px solid $primary-white;
+
+                @include tablet{
+                    border-bottom: 3px solid $primary-white;
+                }
+            }
+
+            &:active{
+                color: $primary-white;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.hero{
+    background: url(../assets/images/hero-bio.jpg) center ;
+    background-size: 100vw;
+    height: 45vh;
+    color: $primary-white;
+
+    @include tablet{
+        height: 80vh;
+    }
+
+    &__text{
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+        font-family: avenirDemi;
+        padding: 16px;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+
+        @include tablet{
+            font-size: 60px;
+            padding: 36px;
+        }
+
+        @include desktop{
+            padding: 0 150px;
+        }
+    }
+}
+
+.about{
+    padding: 0 16px;
+    
+    @include tablet{
+        padding: 0 36px;
+    }
+
+    @include desktop{
+        padding: 0 150px;
+    }
+
+    &__header{
+        font-family: avenirDemi;
+        font-size: 24px;
+        padding: 24px 0 16px;
+
+        @include tablet{
+            font-size: 36px;
+            padding: 48px 0 36px;
+        }
+    }
+
+    &--body{
+        padding: 0 48px;
+
+        @include desktop{
+            padding: 0 87px;
+        }
+    }
+
+    &__image{
+        width: 100%;
+    }
+
+    &__quote{
+        padding: 16px 0;
+
+        @include tablet{
+            padding: 36px 0 18px;
+        }
+
+        &--quote{
+            font-family: avenirDemi;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+
+            @include tablet{
+                font-size: 24px;
+                line-height: 32px;
+            }
+        }
+
+        &--author{
+            font-family: avenirDemi;
+            font-size: 14px;
+            margin: 16px 0;
+        }
+    }
+
+    &__history{
+        padding: 16px 0;
+
+        &--header{
+            font-size: 14px;
+            padding-bottom: 16px;
+
+            @include tablet{
+                font-size: 24px;
+            }
+        }
+
+        &--body{
+            display: flex;
+        }
+
+        &--text{
+            font-size: 13px;
+            line-height: 22px;
+            padding-right: 16px;
+
+            @include tablet{
+                padding-right: 24px;
+                font-size: 14px;
+            }
+
+            &:first-child{
+                margin-bottom: 16px;
+            }
+        }
+    }
+}
+
+.gallery{
+    padding: 0 16px;
+    background-color: $secondary-alabaster;
+    
+    @include tablet{
+        padding: 0 36px;
+    }
+
+    @include desktop{
+        padding: 0 150px;
+    }
+
+    &__title{
+        font-family: avenirDemi;
+        font-size: 24px;
+        padding: 24px 0 16px;
+
+        @include tablet{
+            font-size: 36px;
+            padding: 36px 0 24px;
+        }
+    }
+
+    &__photos{
+        @include tablet{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding-bottom: 24px;
+        }
+    }
+
+    &__photo{
+        width: 100%;
+        height: 35vh;
+        margin-bottom: 16px;
+
+        @include tablet{
+            width: 31%;
+            margin: 4px 0;
+        }
+
+        &--shade{
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+
+            &:hover{
+                background-color: rgba(0, 0, 0, 0);
+            }
+        }
+    }
+
+    &__photo1{
+        background: url(../assets/images/Photo-gallery-1.jpg) no-repeat;
+        background-size: 100%;
+    }
+
+    &__photo2{
+        background: url(../assets/images/Photo-gallery-2.jpg) no-repeat;
+        background-size: 100%;
+    }
+    &__photo3{
+        background: url(../assets/images/Photo-gallery-3.jpg) no-repeat;
+        background-size: 100%;
+    }
+    &__photo4{
+        background: url(../assets/images/Photo-gallery-4.jpg) no-repeat;
+        background-size: 100%;
+    }
+    &__photo5{
+        background: url(../assets/images/Photo-gallery-5.jpg) no-repeat;
+        background-size: 100%;
+    }
+    &__photo6{
+        background: url(../assets/images/Photo-gallery-6.jpg) no-repeat;
+        background-size: 100%;
+    }
+    &__photo7{
+        background: url(../assets/images/Photo-gallery-7.jpg) no-repeat;
+        background-size: 100%;
+    }
+    &__photo8{
+        background: url(../assets/images/Photo-gallery-8.jpg) no-repeat;
+        background-size: 100%;
+    }
+    &__photo9{
+        background: url(../assets/images/Photo-gallery-9.jpg) no-repeat;
+        background-size: 100%;
+    }
+}
+
+.info{
+    background-color: $primary-black;
+    color: $primary-white;
+    padding: 0 16px;
+    
+    @include tablet{
+        padding: 0 36px;
+    }
+
+    @include desktop{
+        padding: 0 150px;
+    }
+
+    &--div{
+        position: relative;
+
+        .bandsite--logo{
+            @include tablet{
+                position: absolute;
+                top: 12px;
+                right: 0;
+            }
+        }
+    }
+
+    &--bar{
+        @include tablet{
+            display: flex;
+            align-items: center;
+            padding: 48px 0 24px;
+        }
+    }
+
+    &__header{
+        padding-top: 24px;
+        font-size: 28px;
+        font-family: avenirDemi;
+
+        @include tablet{
+            padding-top: 0;
+            font-size: 36px;
+        }
+    }
+
+    &__socials{
+        display: flex;
+        justify-content: space-between;
+        margin: 16px 0;
+        width: 140px;
+
+        @include tablet{
+            margin: 0 56px;
+        }
+
+        &--icon{
+            height: 25px;
+            width: 25px;
+        }
+    }
+
+    &__affiliates{
+        @include tablet{
+            display: flex;
+        }
+
+        @include desktop{
+            width: 70%;
+        }
+
+        &--subheader{
+            font-size: 14px;
+            padding: 16px 0;
+
+            @include tablet{
+                padding: 24px 0;
+                margin-right: 72px;
+            }
+        }
+        &--body{
+            font-size: 13px;
+            margin-bottom: 4px;
+        }
+        &--email{
+            font-size: 13px;
+            padding: 16px 0;
+
+            @include tablet{
+                padding: 24px 0;
+            }
+        }
+    }
+
+    .bandsite--logo{
+        margin: 48px 0px 16px;
+    }
+
+    &__copyright{
+        font-size: 13px;
+        padding: 0 0 32px;
+        
+        @include tablet{
+            padding: 24px 0 48px;
+        }
+    }
+}

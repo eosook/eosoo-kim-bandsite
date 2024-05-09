@@ -1,0 +1,415 @@
+@font-face {
+  font-family: avenirRegular;
+  src: url(../../assets/Font/AvenirNextLTPro-Regular.otf) format("opentype");
+}
+@font-face {
+  font-family: avenirDemi;
+  src: url(../../assets/Font/AvenirNextLTPro-Demi.otf) format("opentype");
+}
+@font-face {
+  font-family: avenirBold;
+  src: url(../../assets/Font/AvenirNextLTPro-Bold.otf) format("opentype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: avenirRegular;
+}
+
+img {
+  width: 100vw;
+}
+
+.bandsite--logo {
+  width: 120px;
+  height: 20px;
+}
+
+.header {
+  background-color: #323232;
+  color: #FFFFFF;
+  text-align: center;
+  width: 100dvw;
+}
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 0 36px;
+  }
+}
+@media (min-width: 1280px) {
+  .header {
+    padding: 0 150px;
+  }
+}
+.header .bandsite--logo {
+  margin: 16px 0 8px;
+}
+@media (min-width: 768px) {
+  .header .bandsite--logo {
+    margin: 0;
+  }
+}
+@media (min-width: 768px) {
+  .header__nav {
+    width: 30vw;
+    margin-left: 24px;
+  }
+}
+.header__nav--list {
+  display: flex;
+  color: #AFAFAF;
+}
+@media (min-width: 768px) {
+  .header__nav--list {
+    height: 100%;
+  }
+}
+.header__nav--page {
+  width: 50%;
+  list-style-type: none;
+  box-sizing: border-box;
+  padding-bottom: 11px;
+  border-bottom: 5px solid transparent;
+}
+@media (min-width: 768px) {
+  .header__nav--page {
+    margin: 0 24px;
+    width: auto;
+    height: 100%;
+    padding-bottom: 0;
+    padding: 32px 0 29px;
+    border-bottom: 3px solid transparent;
+  }
+}
+.header__nav--page:hover {
+  border-bottom: 5px solid #FFFFFF;
+}
+@media (min-width: 768px) {
+  .header__nav--page:hover {
+    border-bottom: 3px solid #FFFFFF;
+  }
+}
+.header__nav--page:active {
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.hero {
+  background: url(../assets/Images/hero-bio.jpg) center;
+  background-size: 100vw;
+  height: 45vh;
+  color: #FFFFFF;
+}
+@media (min-width: 768px) {
+  .hero {
+    height: 80vh;
+  }
+}
+.hero__text {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  font-family: avenirDemi;
+  padding: 16px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .hero__text {
+    font-size: 60px;
+    padding: 36px;
+  }
+}
+@media (min-width: 1280px) {
+  .hero__text {
+    padding: 0 150px;
+  }
+}
+
+.about {
+  padding: 0 16px;
+}
+@media (min-width: 768px) {
+  .about {
+    padding: 0 36px;
+  }
+}
+@media (min-width: 1280px) {
+  .about {
+    padding: 0 150px;
+  }
+}
+.about__header {
+  font-family: avenirDemi;
+  font-size: 24px;
+  padding: 24px 0 16px;
+}
+@media (min-width: 768px) {
+  .about__header {
+    font-size: 36px;
+    padding: 48px 0 36px;
+  }
+}
+.about--body {
+  padding: 0 48px;
+}
+@media (min-width: 1280px) {
+  .about--body {
+    padding: 0 87px;
+  }
+}
+.about__image {
+  width: 100%;
+}
+.about__quote {
+  padding: 16px 0;
+}
+@media (min-width: 768px) {
+  .about__quote {
+    padding: 36px 0 18px;
+  }
+}
+.about__quote--quote {
+  font-family: avenirDemi;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+@media (min-width: 768px) {
+  .about__quote--quote {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+.about__quote--author {
+  font-family: avenirDemi;
+  font-size: 14px;
+  margin: 16px 0;
+}
+.about__history {
+  padding: 16px 0;
+}
+.about__history--header {
+  font-size: 14px;
+  padding-bottom: 16px;
+}
+@media (min-width: 768px) {
+  .about__history--header {
+    font-size: 24px;
+  }
+}
+.about__history--body {
+  display: flex;
+}
+.about__history--text {
+  font-size: 13px;
+  line-height: 22px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .about__history--text {
+    padding-right: 24px;
+    font-size: 14px;
+  }
+}
+.about__history--text:first-child {
+  margin-bottom: 16px;
+}
+
+.gallery {
+  padding: 0 16px;
+  background-color: #FAFAFA;
+}
+@media (min-width: 768px) {
+  .gallery {
+    padding: 0 36px;
+  }
+}
+@media (min-width: 1280px) {
+  .gallery {
+    padding: 0 150px;
+  }
+}
+.gallery__title {
+  font-family: avenirDemi;
+  font-size: 24px;
+  padding: 24px 0 16px;
+}
+@media (min-width: 768px) {
+  .gallery__title {
+    font-size: 36px;
+    padding: 36px 0 24px;
+  }
+}
+@media (min-width: 768px) {
+  .gallery__photos {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 24px;
+  }
+}
+.gallery__photo {
+  width: 100%;
+  height: 35vh;
+  margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+  .gallery__photo {
+    width: 31%;
+    margin: 4px 0;
+  }
+}
+.gallery__photo--shade {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.gallery__photo--shade:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+.gallery__photo1 {
+  background: url(../assets/Images/Photo-gallery-1.jpg) no-repeat;
+  background-size: 100%;
+}
+.gallery__photo2 {
+  background: url(../assets/Images/Photo-gallery-2.jpg) no-repeat;
+  background-size: 100%;
+}
+.gallery__photo3 {
+  background: url(../assets/Images/Photo-gallery-3.jpg) no-repeat;
+  background-size: 100%;
+}
+.gallery__photo4 {
+  background: url(../assets/Images/Photo-gallery-4.jpg) no-repeat;
+  background-size: 100%;
+}
+.gallery__photo5 {
+  background: url(../assets/Images/Photo-gallery-5.jpg) no-repeat;
+  background-size: 100%;
+}
+.gallery__photo6 {
+  background: url(../assets/Images/Photo-gallery-6.jpg) no-repeat;
+  background-size: 100%;
+}
+.gallery__photo7 {
+  background: url(../assets/Images/Photo-gallery-7.jpg) no-repeat;
+  background-size: 100%;
+}
+.gallery__photo8 {
+  background: url(../assets/Images/Photo-gallery-8.jpg) no-repeat;
+  background-size: 100%;
+}
+.gallery__photo9 {
+  background: url(../assets/Images/Photo-gallery-9.jpg) no-repeat;
+  background-size: 100%;
+}
+
+.info {
+  background-color: #323232;
+  color: #FFFFFF;
+  padding: 0 16px;
+}
+@media (min-width: 768px) {
+  .info {
+    padding: 0 36px;
+  }
+}
+@media (min-width: 1280px) {
+  .info {
+    padding: 0 150px;
+  }
+}
+.info--div {
+  position: relative;
+}
+@media (min-width: 768px) {
+  .info--div .bandsite--logo {
+    position: absolute;
+    top: 12px;
+    right: 0;
+  }
+}
+@media (min-width: 768px) {
+  .info--bar {
+    display: flex;
+    align-items: center;
+    padding: 48px 0 24px;
+  }
+}
+.info__header {
+  padding-top: 24px;
+  font-size: 28px;
+  font-family: avenirDemi;
+}
+@media (min-width: 768px) {
+  .info__header {
+    padding-top: 0;
+    font-size: 36px;
+  }
+}
+.info__socials {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0;
+  width: 140px;
+}
+@media (min-width: 768px) {
+  .info__socials {
+    margin: 0 56px;
+  }
+}
+.info__socials--icon {
+  height: 25px;
+  width: 25px;
+}
+@media (min-width: 768px) {
+  .info__affiliates {
+    display: flex;
+  }
+}
+@media (min-width: 1280px) {
+  .info__affiliates {
+    width: 70%;
+  }
+}
+.info__affiliates--subheader {
+  font-size: 14px;
+  padding: 16px 0;
+}
+@media (min-width: 768px) {
+  .info__affiliates--subheader {
+    padding: 24px 0;
+    margin-right: 72px;
+  }
+}
+.info__affiliates--body {
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+.info__affiliates--email {
+  font-size: 13px;
+  padding: 16px 0;
+}
+@media (min-width: 768px) {
+  .info__affiliates--email {
+    padding: 24px 0;
+  }
+}
+.info .bandsite--logo {
+  margin: 48px 0px 16px;
+}
+.info__copyright {
+  font-size: 13px;
+  padding: 0 0 32px;
+}
+@media (min-width: 768px) {
+  .info__copyright {
+    padding: 24px 0 48px;
+  }
+}/*# sourceMappingURL=bio.css.map */

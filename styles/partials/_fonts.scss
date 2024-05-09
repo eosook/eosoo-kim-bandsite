@@ -1,0 +1,38 @@
+@font-face{
+    font-family: avenirRegular;
+    src: url(../../assets/font/AvenirNextLTPro-Regular.otf) format("opentype");
+}
+
+@font-face{
+    font-family: avenirDemi;
+    src: url(../../assets/font/AvenirNextLTPro-Demi.otf) format("opentype");
+}
+
+@font-face{
+    font-family: avenirBold;
+    src: url(../../assets/font/AvenirNextLTPro-Bold.otf) format("opentype");
+}
+
+@mixin mobileHeader($font){
+    font-family: avenirBold;
+    font-size: $font;
+    line-height: 32px;
+}
+
+@mixin mobileSubHeader{
+    font-family: avenirDemi;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+@mixin mobileBody{
+    font-family: avenirRegular;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+@mixin mobileLabels{
+    font-family: avenirBold;
+    font-size: 10px;
+    line-height: 20px;
+}
