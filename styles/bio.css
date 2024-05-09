@@ -30,22 +30,22 @@ img {
   background-color: #323232;
   color: #FFFFFF;
   text-align: center;
-  width: 100dvw;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .header {
     display: flex;
     align-items: center;
-    padding: 0 36px;
+    padding: 0 2.25rem;
   }
 }
 @media (min-width: 1280px) {
   .header {
-    padding: 0 150px;
+    padding: 0 9.375rem;
   }
 }
 .header .bandsite--logo {
-  margin: 16px 0 8px;
+  margin: 1rem 0 0.5rem;
 }
 @media (min-width: 768px) {
   .header .bandsite--logo {
@@ -55,7 +55,7 @@ img {
 @media (min-width: 768px) {
   .header__nav {
     width: 30vw;
-    margin-left: 24px;
+    margin-left: 1.5rem;
   }
 }
 .header__nav--list {
@@ -71,16 +71,16 @@ img {
   width: 50%;
   list-style-type: none;
   box-sizing: border-box;
-  padding-bottom: 11px;
+  padding-bottom: 0.6875rem;
   border-bottom: 5px solid transparent;
 }
 @media (min-width: 768px) {
   .header__nav--page {
-    margin: 0 24px;
+    margin: 0 1.5rem;
     width: auto;
     height: 100%;
     padding-bottom: 0;
-    padding: 32px 0 29px;
+    padding: 2rem 0 1.8125rem;
     border-bottom: 3px solid transparent;
   }
 }
@@ -114,15 +114,15 @@ img {
   width: 100%;
   height: 100%;
   font-family: avenirDemi;
-  padding: 16px;
-  font-size: 24px;
+  padding: 1rem;
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
 }
 @media (min-width: 768px) {
   .hero__text {
-    font-size: 60px;
-    padding: 36px;
+    font-size: 3.75rem;
+    padding: 2rem;
   }
 }
 @media (min-width: 1280px) {
@@ -132,11 +132,11 @@ img {
 }
 
 .about {
-  padding: 0 16px;
+  padding: 0 1rem;
 }
 @media (min-width: 768px) {
   .about {
-    padding: 0 36px;
+    padding: 0 2.25rem;
   }
 }
 @media (min-width: 1280px) {
@@ -146,63 +146,63 @@ img {
 }
 .about__header {
   font-family: avenirDemi;
-  font-size: 24px;
-  padding: 24px 0 16px;
+  font-size: 1.5rem;
+  padding: 1.5rem 0 1rem;
 }
 @media (min-width: 768px) {
   .about__header {
-    font-size: 36px;
-    padding: 48px 0 36px;
+    font-size: 2rem;
+    padding: 3rem 0 2rem;
   }
 }
 @media (min-width: 768px) {
   .about--body {
-    padding: 0 48px;
+    padding: 0 3rem;
   }
 }
 @media (min-width: 1280px) {
   .about--body {
-    padding: 0 87px;
+    padding: 0 5.4375rem;
   }
 }
 .about__image {
   width: 100%;
 }
 .about__quote {
-  padding: 16px 0;
+  padding: 1rem 0;
 }
 @media (min-width: 768px) {
   .about__quote {
-    padding: 36px 0 18px;
+    padding: 2rem 0 1.125rem;
   }
 }
 .about__quote--quote {
   font-family: avenirDemi;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 @media (min-width: 768px) {
   .about__quote--quote {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 .about__quote--author {
   font-family: avenirDemi;
-  font-size: 14px;
-  margin: 16px 0;
+  font-size: 0.875rem;
+  margin: 1rem 0;
 }
 .about__history {
-  padding: 16px 0;
+  padding: 1rem 0;
 }
 .about__history--header {
-  font-size: 14px;
-  padding-bottom: 16px;
+  font-size: 0.875rem;
+  padding-bottom: 1rem;
 }
 @media (min-width: 768px) {
   .about__history--header {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 768px) {
@@ -211,14 +211,14 @@ img {
   }
 }
 .about__history--text {
-  font-size: 13px;
-  line-height: 22px;
-  padding-right: 16px;
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  padding-right: 1rem;
 }
 @media (min-width: 768px) {
   .about__history--text {
-    padding-right: 24px;
-    font-size: 14px;
+    padding-right: 1.5rem;
+    font-size: 0.875rem;
   }
 }
 .about__history--text:first-child {
@@ -226,28 +226,28 @@ img {
 }
 
 .gallery {
-  padding: 0 16px;
+  padding: 0 1rem;
   background-color: #FAFAFA;
 }
 @media (min-width: 768px) {
   .gallery {
-    padding: 0 36px;
+    padding: 0 2.25rem;
   }
 }
 @media (min-width: 1280px) {
   .gallery {
-    padding: 0 150px;
+    padding: 0 9.375rem;
   }
 }
 .gallery__title {
   font-family: avenirDemi;
-  font-size: 24px;
-  padding: 24px 0 16px;
+  font-size: 1.5rem;
+  padding: 1.5rem 0 1rem;
 }
 @media (min-width: 768px) {
   .gallery__title {
-    font-size: 36px;
-    padding: 36px 0 24px;
+    font-size: 2.25rem;
+    padding: 2.25rem 0 1.5rem;
   }
 }
 @media (min-width: 768px) {
@@ -256,19 +256,19 @@ img {
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-bottom: 24px;
+    padding-bottom: 1.5rem;
   }
 }
 .gallery__photo {
   width: 100%;
   height: 300px;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 @media (min-width: 768px) {
   .gallery__photo {
-    width: 32%;
-    height: 250px;
-    margin: 16px 0;
+    width: 31%;
+    height: 220px;
+    margin: 1rem 0;
   }
 }
 .gallery__photo--shade {
@@ -319,16 +319,16 @@ img {
 .info {
   background-color: #323232;
   color: #FFFFFF;
-  padding: 0 16px;
+  padding: 0 1rem;
 }
 @media (min-width: 768px) {
   .info {
-    padding: 0 36px;
+    padding: 0 2.25rem;
   }
 }
 @media (min-width: 1280px) {
   .info {
-    padding: 0 150px;
+    padding: 0 9.375rem;
   }
 }
 .info--div {
@@ -345,29 +345,29 @@ img {
   .info--bar {
     display: flex;
     align-items: center;
-    padding: 48px 0 24px;
+    padding: 3rem 0 1.5rem;
   }
 }
 .info__header {
   padding-top: 24px;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-family: avenirDemi;
 }
 @media (min-width: 768px) {
   .info__header {
     padding-top: 0;
-    font-size: 36px;
+    font-size: 2.25rem;
   }
 }
 .info__socials {
   display: flex;
   justify-content: space-between;
-  margin: 16px 0;
+  margin: 1rem 0;
   width: 140px;
 }
 @media (min-width: 768px) {
   .info__socials {
-    margin: 0 56px;
+    margin: 0 3.5rem;
   }
 }
 .info__socials--icon {
@@ -385,37 +385,37 @@ img {
   }
 }
 .info__affiliates--subheader {
-  font-size: 14px;
-  padding: 16px 0;
+  font-size: 0.875rem;
+  padding: 1rem 0;
 }
 @media (min-width: 768px) {
   .info__affiliates--subheader {
-    padding: 24px 0;
-    margin-right: 72px;
+    padding: 1.5rem 0;
+    margin-right: 4.5rem;
   }
 }
 .info__affiliates--body {
-  font-size: 13px;
-  margin-bottom: 4px;
+  font-size: 0.8125rem;
+  margin-bottom: 0.25rem;
 }
 .info__affiliates--email {
-  font-size: 13px;
-  padding: 16px 0;
+  font-size: 0.8125rem;
+  padding: 1rem 0;
 }
 @media (min-width: 768px) {
   .info__affiliates--email {
-    padding: 24px 0;
+    padding: 1.5rem 0;
   }
 }
 .info .bandsite--logo {
-  margin: 48px 0px 16px;
+  margin: 3rem 0px 1rem;
 }
 .info__copyright {
-  font-size: 13px;
-  padding: 0 0 32px;
+  font-size: 0.8125rem;
+  padding: 0 0 2rem;
 }
 @media (min-width: 768px) {
   .info__copyright {
-    padding: 24px 0 48px;
+    padding: 1.5rem 0 3rem;
   }
 }/*# sourceMappingURL=bio.css.map */
