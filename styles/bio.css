@@ -172,7 +172,7 @@ img {
 }
 @media (min-width: 768px) {
   .about__image {
-    height: 60vh;
+    height: 70vh;
   }
 }
 .about__quote {
@@ -274,7 +274,7 @@ img {
 @media (min-width: 768px) {
   .gallery__photo {
     width: 31%;
-    height: 25vh;
+    height: 30vh;
     margin: 1rem 0;
   }
 }
