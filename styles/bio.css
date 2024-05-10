@@ -398,7 +398,6 @@ img {
 @media (min-width: 768px) {
   .info__affiliates--subheader {
     padding: 1.5rem 0;
-    margin-right: 4.5rem;
   }
 }
 .info__affiliates--body {
@@ -424,5 +423,10 @@ img {
 @media (min-width: 768px) {
   .info__copyright {
     padding: 1.5rem 0 3rem;
+  }
+}
+@media (min-width: 768px) {
+  .info--section {
+    padding-right: 4.5rem;
   }
 }/*# sourceMappingURL=bio.css.map */

@@ -393,7 +393,6 @@ img{
 
             @include tablet{
                 padding: 1.5rem 0;
-                margin-right: 4.5rem;
             }
         }
         &--body{
@@ -420,6 +419,12 @@ img{
         
         @include tablet{
             padding: 1.5rem 0 3rem;
+        }
+    }
+
+    &--section{
+        @include tablet{
+            padding-right: 4.5rem;
         }
     }
 }
