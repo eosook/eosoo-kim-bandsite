@@ -6,7 +6,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: avenirRegular;
 }
 
 img{
@@ -102,22 +101,21 @@ img{
     }
 
     &__text{
+        @include fontHeader;
         background-color: rgba(0, 0, 0, 0.5);
         width: 100%;
         height: 100%;
         font-family: avenirDemi;
         padding: 1rem;
-        font-size: 1.5rem;
         display: flex;
         align-items: center;
 
         @include tablet{
-            font-size: 3.75rem;
             padding: 2rem;
         }
 
         @include desktop{
-            padding: 0 150px;
+            padding: 0 9.375rem;
         }
     }
 }
@@ -134,12 +132,11 @@ img{
     }
 
     &__header{
-        font-family: avenirDemi;
-        font-size: 1.5rem;
+        @include fontSubHeader;
         padding: 1.5rem 0 1rem;
 
         @include tablet{
-            font-size: 2rem;
+            font-size: 2.5rem;
             padding: 3rem 0 2rem;
         }
     }
@@ -171,20 +168,12 @@ img{
         }
 
         &--quote{
-            font-family: avenirDemi;
-            font-weight: 600;
-            font-size: 1rem;
-            line-height: 1.5rem;
-
-            @include tablet{
-                font-size: 1.5rem;
-                line-height: 2rem;
-            }
+            @include fontSubHeader;
         }
 
         &--author{
+            @include fontBody;
             font-family: avenirDemi;
-            font-size: 0.875rem;
             margin: 1rem 0;
         }
     }
@@ -193,12 +182,8 @@ img{
         padding: 1rem 0;
 
         &--header{
-            font-size: 0.875rem;
+            @include fontSubHeader;
             padding-bottom: 1rem;
-
-            @include tablet{
-                font-size: 1.5rem;
-            }
         }
 
         &--body{
@@ -208,13 +193,11 @@ img{
         }
 
         &--text{
-            font-size: 0.8125rem;
-            line-height: 1.375rem;
             padding-right: 1rem;
+            @include fontBody;
 
             @include tablet{
                 padding-right: 1.5rem;
-                font-size: 0.875rem;
             }
 
             &:first-child{
@@ -237,12 +220,12 @@ img{
     }
 
     &__title{
+        @include fontHeader;
         font-family: avenirDemi;
-        font-size: 1.5rem;
         padding: 1.5rem 0 1rem;
 
         @include tablet{
-            font-size: 2.25rem;
+            font-size: 2.5rem;
             padding: 2.25rem 0 1.5rem;
         }
     }
@@ -352,9 +335,9 @@ img{
     }
 
     &__header{
-        padding-top: 1.5rem;
+        @include fontSubHeader;
         font-size: 1.75rem;
-        font-family: avenirDemi;
+        padding-top: 1.5rem;
 
         @include tablet{
             padding-top: 0;
@@ -379,6 +362,8 @@ img{
     }
 
     &__affiliates{
+        @include fontFooter;
+        
         @include tablet{
             display: flex;
         }
@@ -388,7 +373,7 @@ img{
         }
 
         &--subheader{
-            font-size: 0.875rem;
+            @include fontFooter;
             padding: 1rem 0;
 
             @include tablet{
@@ -396,11 +381,9 @@ img{
             }
         }
         &--body{
-            font-size: 0.8125rem;
             margin-bottom: 0.25rem;
         }
         &--email{
-            font-size: 0.8125rem;
             padding: 1rem 0;
 
             @include tablet{
@@ -414,7 +397,7 @@ img{
     }
 
     &__copyright{
-        font-size: 0.8125rem;
+        @include fontBody;
         padding: 0 0 2rem;
         
         @include tablet{

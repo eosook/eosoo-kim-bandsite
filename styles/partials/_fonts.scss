@@ -1,3 +1,5 @@
+@use './responsive' as *;
+
 @font-face{
     font-family: avenirRegular;
     src: url(../../assets/font/AvenirNextLTPro-Regular.otf) format("opentype");
@@ -13,26 +15,51 @@
     src: url(../../assets/font/AvenirNextLTPro-Bold.otf) format("opentype");
 }
 
-@mixin mobileHeader($font){
+@mixin fontHeader{
     font-family: avenirBold;
-    font-size: $font;
+    font-size: 32;
     line-height: 32px;
+
+    @include tablet{
+        font-size: 60px;
+        line-height: 68px;
+    }
 }
 
-@mixin mobileSubHeader{
+@mixin fontSubHeader{
     font-family: avenirDemi;
     font-size: 14px;
     line-height: 22px;
+
+    @include tablet{
+        font-size: 24px;
+        line-height: 32px;
+    }
 }
 
-@mixin mobileBody{
+@mixin fontBody{
     font-family: avenirRegular;
     font-size: 13px;
     line-height: 18px;
+
+    @include tablet{
+        font-size: 14px;
+        line-height: 22px;
+    }
 }
 
-@mixin mobileLabels{
+@mixin fontFooter{
+    font-family: avenirRegular;
+    font-size: 14px;
+}
+
+@mixin fontLabels{
     font-family: avenirBold;
     font-size: 10px;
     line-height: 20px;
+
+    @include tablet{
+        font-size: 12px;
+        line-height: 20px;
+    }
 }
