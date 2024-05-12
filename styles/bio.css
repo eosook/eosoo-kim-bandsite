@@ -313,13 +313,13 @@ img {
 @media (min-width: 768px) {
   .gallery__photo {
     width: 31%;
-    height: 180px;
+    height: 160px;
     margin: 1rem 0;
   }
 }
 @media (min-width: 1280px) {
   .gallery__photo {
-    height: 220px;
+    height: 200px;
   }
 }
 .gallery__photo--shade {
