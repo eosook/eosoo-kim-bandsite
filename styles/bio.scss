@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: avenirRegular;
 }
 
 img{
@@ -102,10 +103,10 @@ img{
 
     &__text{
         @include fontHeader;
+        font-family: avenirDemi;
         background-color: rgba(0, 0, 0, 0.5);
         width: 100%;
         height: 100%;
-        font-family: avenirDemi;
         padding: 1rem;
         display: flex;
         align-items: center;
@@ -132,7 +133,8 @@ img{
     }
 
     &__header{
-        @include fontSubHeader;
+        @include fontHeader;
+        font-family: avenirDemi;
         padding: 1.5rem 0 1rem;
 
         @include tablet{
@@ -242,13 +244,17 @@ img{
 
     &__photo{
         width: 100%;
-        height: 40vh;
+        height: 250px;
         margin-bottom: 1rem;
 
         @include tablet{
             width: 31%;
-            height: 30vh;
+            height: 180px;
             margin: 1rem 0;
+        }
+
+        @include desktop{
+            height: 220px;
         }
 
         &--shade{
