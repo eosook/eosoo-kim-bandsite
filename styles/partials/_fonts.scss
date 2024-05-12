@@ -17,49 +17,49 @@
 
 @mixin fontHeader{
     font-family: avenirBold;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 2rem;
 
     @include tablet{
-        font-size: 60px;
-        line-height: 68px;
+        font-size: 3.75rem;
+        line-height: 4.25rem;
     }
 }
 
 @mixin fontSubHeader{
     font-family: avenirDemi;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
 
     @include tablet{
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 1.5rem;
+        line-height: 2rem;
     }
 }
 
 @mixin fontBody{
     font-family: avenirRegular;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
 
     @include tablet{
-        font-size: 14px;
-        line-height: 22px;
+        font-size: 0.875rem;
+        line-height: 1.375rem;
     }
 }
 
 @mixin fontFooter{
     font-family: avenirRegular;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 @mixin fontLabels{
     font-family: avenirBold;
-    font-size: 10px;
-    line-height: 20px;
+    font-size: 0.0625rem;
+    line-height: 1.25rem;
 
     @include tablet{
-        font-size: 12px;
-        line-height: 20px;
+        font-size: 0.75rem;
+        line-height: 1.25rem;
     }
 }
