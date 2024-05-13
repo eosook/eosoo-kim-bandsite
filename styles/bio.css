@@ -84,6 +84,11 @@ img {
     border-bottom: 3px solid transparent;
   }
 }
+@media (min-width: 1280px) {
+  .header__nav--page {
+    padding: 2.5rem 0;
+  }
+}
 .header__nav--page:hover {
   border-bottom: 5px solid #FFFFFF;
   cursor: pointer;
