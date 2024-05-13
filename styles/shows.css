@@ -1,4 +1,71 @@
+@font-face {
+  font-family: avenirRegular;
+  src: url(../../assets/font/AvenirNextLTPro-Regular.otf) format("opentype");
+}
+@font-face {
+  font-family: avenirDemi;
+  src: url(../../assets/font/AvenirNextLTPro-Demi.otf) format("opentype");
+}
+@font-face {
+  font-family: avenirBold;
+  src: url(../../assets/font/AvenirNextLTPro-Bold.otf) format("opentype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: avenirRegular;
+}
+
 .hero--show {
   background: url(../assets/images/hero-shows.jpg) center no-repeat;
   background-size: 100% 100%;
+}
+.hero--text {
+  padding: 1.5rem 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .hero--text {
+    padding: 3rem 2.25rem;
+  }
+}
+.hero__subheader {
+  font-family: avenirDemi;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  padding: 1rem 0;
+  font-family: avenirDemi;
+}
+@media (min-width: 768px) {
+  .hero__subheader {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .hero__subheader {
+    padding: 2.25rem 0;
+  }
+}
+.hero__header {
+  font-family: avenirBold;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 1rem 0;
+  font-family: avenirDemi;
+  width: 200px;
+}
+@media (min-width: 768px) {
+  .hero__header {
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+  }
+}
+@media (min-width: 768px) {
+  .hero__header {
+    padding: 2.25rem 0;
+  }
 }/*# sourceMappingURL=shows.css.map */

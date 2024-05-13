@@ -1,4 +1,38 @@
-.hero--show{
-    background: url(../assets/images/hero-shows.jpg) center no-repeat;
-    background-size: 100% 100%;
+@use 'partials/colors' as *;
+@use 'partials/fonts' as *;
+@use 'partials/responsive' as *;
+@use 'partials/padding' as *;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: avenirRegular;
+}
+
+.hero{
+    &--show{
+        background: url(../assets/images/hero-shows.jpg) center no-repeat;
+        background-size: 100% 100%;
+    }
+
+    &--text{
+        @include paddingBefore;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+    }
+
+    &__subheader{
+        @include fontSubHeader;
+        @include paddingAfter;
+        font-family: avenirDemi;
+    }
+
+    &__header{
+        @include fontHeader;
+        @include paddingAfter;
+        font-family: avenirDemi;
+        width: 200px;
+    }
 }
