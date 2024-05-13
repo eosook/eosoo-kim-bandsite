@@ -72,6 +72,10 @@ img{
                 border-bottom: 3px solid transparent;
             }
 
+            @include desktop{
+                padding: 2.5rem 0;
+            }
+
             &:hover{
                 border-bottom: 5px solid $primary-white;
                 cursor: pointer;
@@ -102,10 +106,10 @@ img{
 
     &__text{
         @include fontHeader;
+        font-family: avenirDemi;
         background-color: rgba(0, 0, 0, 0.5);
         width: 100%;
         height: 100%;
-        font-family: avenirDemi;
         padding: 1rem;
         display: flex;
         align-items: center;
@@ -132,7 +136,8 @@ img{
     }
 
     &__header{
-        @include fontSubHeader;
+        @include fontHeader;
+        font-family: avenirDemi;
         padding: 1.5rem 0 1rem;
 
         @include tablet{
@@ -242,13 +247,17 @@ img{
 
     &__photo{
         width: 100%;
-        height: 40vh;
+        height: 250px;
         margin-bottom: 1rem;
 
         @include tablet{
             width: 31%;
-            height: 30vh;
+            height: 160px;
             margin: 1rem 0;
+        }
+
+        @include desktop{
+            height: 200px;
         }
 
         &--shade{
