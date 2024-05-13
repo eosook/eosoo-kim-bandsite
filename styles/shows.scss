@@ -40,3 +40,12 @@
         @include paddingAfter;
     }
 }
+
+.shows{
+    @include paddingBefore;
+
+    &__header{
+        @include fontHeader;
+        font-family: avenirDemi;
+    }
+}

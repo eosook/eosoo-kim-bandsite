@@ -71,4 +71,25 @@
   .hero__soundcloud {
     padding: 2.25rem 0;
   }
+}
+
+.shows {
+  padding: 1.5rem 1rem;
+}
+@media (min-width: 768px) {
+  .shows {
+    padding: 3rem 2.25rem;
+  }
+}
+.shows__header {
+  font-family: avenirBold;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: avenirDemi;
+}
+@media (min-width: 768px) {
+  .shows__header {
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+  }
 }/*# sourceMappingURL=shows.css.map */
