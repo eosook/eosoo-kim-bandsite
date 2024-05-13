@@ -20,6 +20,7 @@
 .hero--show {
   background: url(../assets/images/hero-shows.jpg) center no-repeat;
   background-size: 100% 100%;
+  height: 100%;
 }
 .hero--text {
   padding: 1.5rem 1rem;
@@ -37,7 +38,7 @@
   font-size: 0.875rem;
   line-height: 1.375rem;
   padding: 1rem 0;
-  font-family: avenirDemi;
+  font-family: avenirRegular;
 }
 @media (min-width: 768px) {
   .hero__subheader {
@@ -54,9 +55,8 @@
   font-family: avenirBold;
   font-size: 1.5rem;
   line-height: 2rem;
-  padding: 1rem 0;
   font-family: avenirDemi;
-  width: 200px;
+  width: 240px;
 }
 @media (min-width: 768px) {
   .hero__header {
@@ -64,8 +64,11 @@
     line-height: 4.25rem;
   }
 }
+.hero__soundcloud {
+  padding: 1rem 0;
+}
 @media (min-width: 768px) {
-  .hero__header {
+  .hero__soundcloud {
     padding: 2.25rem 0;
   }
 }/*# sourceMappingURL=shows.css.map */

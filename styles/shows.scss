@@ -14,6 +14,7 @@
     &--show{
         background: url(../assets/images/hero-shows.jpg) center no-repeat;
         background-size: 100% 100%;
+        height: 100%;
     }
 
     &--text{
@@ -26,13 +27,16 @@
     &__subheader{
         @include fontSubHeader;
         @include paddingAfter;
-        font-family: avenirDemi;
+        font-family: avenirRegular;
     }
 
     &__header{
         @include fontHeader;
-        @include paddingAfter;
         font-family: avenirDemi;
-        width: 200px;
+        width: 240px;
+    }
+
+    &__soundcloud{
+        @include paddingAfter;
     }
 }
