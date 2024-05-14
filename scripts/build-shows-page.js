@@ -37,54 +37,40 @@ showsHeader.innerText = "Shows";
 showsHeader.classList.add('shows__header');
 shows.appendChild(showsHeader);
 
+function createBar(showBar, show, key, showKey){
+    // create date section
+    let showBarDate = document.createElement('div');
+    // adds subheader element
+    let dateSubHeader = document.createElement('h3');
+    dateSubHeader.innerHTML = key;
+    dateSubHeader.classList.add('shows__bar--subheader');
+    // adds information element
+    let dateInfo = document.createElement('p');
+    dateInfo.innerText = showKey;
+    dateInfo.classList.add('shows__bar--body', 'shows__bar--date');
+    // appends the subheader and information elements to the showBar element
+    showBar.append(dateSubHeader, dateInfo);
+}
+
 showsList.forEach((show) => {
     let showBar = document.createElement('div');
     showBar.classList.add("shows__bar")
 
     // create date section
     let showBarDate = document.createElement('div');
-    // adds subheader element
-    let dateSubHeader = document.createElement('h3');
-    dateSubHeader.innerHTML = 'DATE';
-    dateSubHeader.classList.add('shows__bar--subheader');
-    // adds information element
-    let dateInfo = document.createElement('p');
-    dateInfo.innerText = show.date;
-    dateInfo.classList.add('shows__bar--body', 'shows__bar--date');
-    // appends the subheader and information elements to the showBar element
-    showBar.append(dateSubHeader, dateInfo);
-
+    createBar(showBar, show, 'date', show.date);
     // create venue section
     let showBarVenue = document.createElement('div');
-    // adds subheader element
-    let venueSubHeader = document.createElement('h3');
-    venueSubHeader.innerHTML = 'VENUE';
-    venueSubHeader.classList.add('shows__bar--subheader');
-    // adds information element
-    let venueInfo = document.createElement('p');
-    venueInfo.innerText = show.venue;
-    venueInfo.classList.add('shows__bar--body');
-    // appends the subheader and information elements to the showBar element
-    showBar.append(venueSubHeader, venueInfo);
-
+    createBar(showBar, show, 'venue', show.venue);
     // create location section
     let showBarLocation = document.createElement('div');
-    // adds subheader element
-    let locationSubHeader = document.createElement('h3');
-    locationSubHeader.innerHTML = 'Location';
-    locationSubHeader.classList.add('shows__bar--subheader');
-    // adds information element
-    let locationInfo = document.createElement('p');
-    locationInfo.innerText = show.location;
-    locationInfo.classList.add('shows__bar--body');
+    createBar(showBar, show, 'location', show.location);
 
     // creates and adds buy button
     let buyButton = document.createElement('button');
     buyButton.innerText = "Buy Tickets"
     buyButton.classList.add('shows__bar--button');
 
-    // appends the subheader and information elements to the showBar element
-    showBar.append(locationSubHeader, locationInfo);
 
     //append the date, venue, and location section to the main bar.
     showBar.append(showBarDate, showBarVenue, showBarLocation, buyButton);
