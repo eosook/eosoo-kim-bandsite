@@ -85,11 +85,70 @@
   font-family: avenirBold;
   font-size: 1.5rem;
   line-height: 2rem;
+  padding: 1rem 0;
   font-family: avenirDemi;
 }
 @media (min-width: 768px) {
   .shows__header {
     font-size: 3.75rem;
     line-height: 4.25rem;
+  }
+}
+@media (min-width: 768px) {
+  .shows__header {
+    padding: 2.25rem 0;
+  }
+}
+.shows__bar {
+  padding: 1rem 0;
+  border-bottom: 1px solid #E1E1E1;
+}
+@media (min-width: 768px) {
+  .shows__bar {
+    padding: 2.25rem 0;
+  }
+}
+.shows__bar--subheader {
+  font-family: avenirBold;
+  font-size: 0.625rem;
+  line-height: 1.25rem;
+  font-family: avenirRegular;
+  color: #AFAFAF;
+}
+@media (min-width: 768px) {
+  .shows__bar--subheader {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+  }
+}
+.shows__bar--body {
+  font-family: avenirRegular;
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+}
+@media (min-width: 768px) {
+  .shows__bar--body {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
+}
+.shows__bar--date {
+  font-family: avenirDemi;
+}
+.shows__bar--button {
+  font-family: avenirDemi;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  background-color: #323232;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  border-radius: 5px;
+  width: 100%;
+  padding: 0.5rem;
+}
+@media (min-width: 768px) {
+  .shows__bar--button {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }/*# sourceMappingURL=shows.css.map */

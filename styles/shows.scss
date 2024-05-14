@@ -46,6 +46,36 @@
 
     &__header{
         @include fontHeader;
+        @include paddingAfter;
         font-family: avenirDemi;
+    }
+
+    &__bar{
+        @include paddingAfter;
+        border-bottom: 1px solid $secondary-mercury;
+
+        &--subheader{
+            @include fontLabels;
+            font-family: avenirRegular;
+            color: $primary-silver;
+        }
+    
+        &--body{
+            @include fontBody;
+        }
+    
+        &--date{
+            font-family: avenirDemi;
+        }
+    
+        &--button{
+            @include fontSubHeader;
+            background-color: $primary-black;
+            color: $primary-white;
+            text-transform: uppercase;
+            border-radius: 5px;
+            width: 100%;
+            padding: 0.5rem;
+        }
     }
 }
