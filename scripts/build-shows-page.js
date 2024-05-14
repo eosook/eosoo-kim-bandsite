@@ -76,10 +76,16 @@ showsList.forEach((show) => {
     let locationInfo = document.createElement('p');
     locationInfo.innerText = show.location;
     locationInfo.classList.add('shows__body');
+
+    // creates and adds buy button
+    let buyButton = document.createElement('button');
+    buyButton.innerText = "Buy Tickets"
+    buyButton.classList.add('shows__button');
+
     // appends the subheader and information elements to the showBar element
     showBar.append(locationSubHeader, locationInfo);
 
     //append the date, venue, and location section to the main bar.
-    showBar.append(showBarDate, showBarVenue, showBarLocation);
+    showBar.append(showBarDate, showBarVenue, showBarLocation, buyButton);
     shows.appendChild(showBar);
 });
