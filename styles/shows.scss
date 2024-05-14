@@ -54,14 +54,20 @@
         @include paddingAfter;
         border-bottom: 1px solid $secondary-mercury;
 
+        @include tablet{
+            display: flex;
+        }
+
         &--subheader{
             @include fontLabels;
             font-family: avenirRegular;
             color: $primary-silver;
+            text-transform: uppercase;
         }
     
         &--body{
             @include fontBody;
+            padding-bottom: 1rem;
         }
     
         &--date{

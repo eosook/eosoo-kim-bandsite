@@ -23,7 +23,7 @@
   height: 100%;
 }
 .hero--text {
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 1rem 1rem;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
@@ -74,7 +74,7 @@
 }
 
 .shows {
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 1rem 1rem;
 }
 @media (min-width: 768px) {
   .shows {
@@ -108,12 +108,18 @@
     padding: 2.25rem 0;
   }
 }
+@media (min-width: 768px) {
+  .shows__bar {
+    display: flex;
+  }
+}
 .shows__bar--subheader {
   font-family: avenirBold;
   font-size: 0.625rem;
   line-height: 1.25rem;
   font-family: avenirRegular;
   color: #AFAFAF;
+  text-transform: uppercase;
 }
 @media (min-width: 768px) {
   .shows__bar--subheader {
@@ -125,6 +131,7 @@
   font-family: avenirRegular;
   font-size: 0.8125rem;
   line-height: 1.25rem;
+  padding-bottom: 1rem;
 }
 @media (min-width: 768px) {
   .shows__bar--body {

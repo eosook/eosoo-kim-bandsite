@@ -37,9 +37,7 @@ showsHeader.innerText = "Shows";
 showsHeader.classList.add('shows__header');
 shows.appendChild(showsHeader);
 
-function createBar(showBar, show, key, showKey){
-    // create date section
-    let showBarDate = document.createElement('div');
+function createBar(showBarDate, show, key, showKey){
     // adds subheader element
     let dateSubHeader = document.createElement('h3');
     dateSubHeader.innerHTML = key;
@@ -47,9 +45,14 @@ function createBar(showBar, show, key, showKey){
     // adds information element
     let dateInfo = document.createElement('p');
     dateInfo.innerText = showKey;
-    dateInfo.classList.add('shows__bar--body', 'shows__bar--date');
+    dateInfo.classList.add('shows__bar--body');
+
+    if (key === 'date'){
+        dateInfo.classList.add('shows__bar--date');
+    }
+
     // appends the subheader and information elements to the showBar element
-    showBar.append(dateSubHeader, dateInfo);
+    showBarDate.append(dateSubHeader, dateInfo);
 }
 
 showsList.forEach((show) => {
@@ -58,19 +61,18 @@ showsList.forEach((show) => {
 
     // create date section
     let showBarDate = document.createElement('div');
-    createBar(showBar, show, 'date', show.date);
+    createBar(showBarDate, show, 'date', show.date);
     // create venue section
     let showBarVenue = document.createElement('div');
-    createBar(showBar, show, 'venue', show.venue);
+    createBar(showBarVenue, show, 'venue', show.venue);
     // create location section
     let showBarLocation = document.createElement('div');
-    createBar(showBar, show, 'location', show.location);
+    createBar(showBarLocation, show, 'location', show.location);
 
     // creates and adds buy button
     let buyButton = document.createElement('button');
     buyButton.innerText = "Buy Tickets"
     buyButton.classList.add('shows__bar--button');
-
 
     //append the date, venue, and location section to the main bar.
     showBar.append(showBarDate, showBarVenue, showBarLocation, buyButton);
