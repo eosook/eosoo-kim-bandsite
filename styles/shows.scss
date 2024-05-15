@@ -26,38 +26,44 @@
 
     &__subheader{
         @include fontSubHeader;
-        @include paddingAfter;
+        @include paddingAfter(0);
         font-family: avenirRegular;
     }
 
     &__header{
         @include fontHeader;
+        @include paddingAfter(0);
         font-family: avenirDemi;
         width: 240px;
     }
 
     &__soundcloud{
-        @include paddingAfter;
+        @include paddingAfter(0);
     }
 }
 
 .shows{
-    @include paddingBefore;
+    padding: 1.5rem 0rem 1rem;
+
+    @include  tablet{
+        padding: 3rem 1rem;
+    }
 
     &__header{
         @include fontHeader;
-        @include paddingAfter;
+        padding: 0 1rem;
         font-family: avenirDemi;
     }
 
     &__bar{
-        @include paddingAfter;
+        @include paddingAfter(1rem);
         border-bottom: 1px solid $secondary-mercury;
 
         @include tablet{
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding-bottom: 0;
         }
 
         &--subheader{
@@ -74,6 +80,10 @@
         &--body{
             @include fontBody;
             padding-bottom: 1rem;
+
+            @include tablet{
+                font-size: 1.125rem
+            }
         }
     
         &--date{
@@ -88,12 +98,14 @@
             border-radius: 5px;
             width: 100%;
             padding: 0.5rem;
+            border: none;
 
             @include tablet{
                 font-size: 1.25rem;
                 font-family: avenirRegular;
                 height: 50px;
                 width: 180px;
+                margin-bottom: 1rem;
             }
         }
     }
@@ -105,12 +117,12 @@
     &--firstbar{
         @include tablet{
             .shows__bar--subheader{
-                display: block;
-                padding-bottom: 2rem;
+            display: block;
+            padding-bottom: 2rem;
             }
-    
+
             .shows__bar--button{
-                margin-top: 2rem;
+                margin-top: 3rem;
             }
         }
     }

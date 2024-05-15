@@ -8,10 +8,10 @@
     }
 }
 
-@mixin paddingAfter{
-    padding: 1rem 0;
+@mixin paddingAfter($leftRightPadding){
+    padding: 1rem $leftRightPadding;
 
     @include tablet{
-        padding: 2.25rem 0;
+        padding: 2.25rem $leftRightPadding;
     }
 }
