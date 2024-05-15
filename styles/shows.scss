@@ -49,6 +49,11 @@
         padding: 3rem 1rem;
     }
 
+    @include desktop{
+        display: flex;
+        padding: 3rem 6rem;
+    }
+
     &__header{
         @include fontHeader;
         padding: 0 1rem;

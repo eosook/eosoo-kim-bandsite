@@ -32,10 +32,15 @@ let showsList = [
 ]
 
 let shows = document.querySelector('.shows');
+
 let showsHeader = document.createElement('h2');
 showsHeader.innerText = "Shows";
 showsHeader.classList.add('shows__header');
 shows.appendChild(showsHeader);
+
+let showsContainer = document.createElement('div');
+showsContainer.classList.add("shows--container");
+shows.appendChild(showsContainer);
 
 function createBar(showBarDate, show, key, showKey){
     // adds subheader element
@@ -83,5 +88,5 @@ showsList.forEach((show, i) => {
         showBar.classList.add('shows--firstbar');
     }
 
-    shows.appendChild(showBar);
+    showsContainer.appendChild(showBar);
 });

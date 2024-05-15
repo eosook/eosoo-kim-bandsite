@@ -87,6 +87,12 @@
     padding: 3rem 1rem;
   }
 }
+@media (min-width: 1280px) {
+  .shows {
+    display: flex;
+    padding: 3rem 6rem;
+  }
+}
 .shows__header {
   font-family: avenirBold;
   font-size: 1.5rem;
