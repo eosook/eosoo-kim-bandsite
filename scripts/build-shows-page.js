@@ -53,9 +53,10 @@ function createBar(showBarDate, show, key, showKey){
 
     // appends the subheader and information elements to the showBar element
     showBarDate.append(dateSubHeader, dateInfo);
+    showBarDate.classList.add('shows__section')
 }
 
-showsList.forEach((show) => {
+showsList.forEach((show, i) => {
     let showBar = document.createElement('div');
     showBar.classList.add("shows__bar")
 
@@ -76,5 +77,11 @@ showsList.forEach((show) => {
 
     //append the date, venue, and location section to the main bar.
     showBar.append(showBarDate, showBarVenue, showBarLocation, buyButton);
+    
+    //adds class to only the first bar
+    if(i === 0){
+        showBar.classList.add('shows--firstbar');
+    }
+
     shows.appendChild(showBar);
 });

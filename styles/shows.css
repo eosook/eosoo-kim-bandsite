@@ -112,6 +112,7 @@
   .shows__bar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 }
 .shows__bar--subheader {
@@ -126,6 +127,11 @@
   .shows__bar--subheader {
     font-size: 0.75rem;
     line-height: 1.25rem;
+  }
+}
+@media (min-width: 768px) {
+  .shows__bar--subheader {
+    display: none;
   }
 }
 .shows__bar--body {
@@ -166,5 +172,17 @@
     font-family: avenirRegular;
     height: 50px;
     width: 180px;
+  }
+}
+.shows__section {
+  width: 25%;
+}
+@media (min-width: 768px) {
+  .shows--firstbar .shows__bar--subheader {
+    display: block;
+    padding-bottom: 2rem;
+  }
+  .shows--firstbar .shows__bar--button {
+    margin-top: 2rem;
   }
 }/*# sourceMappingURL=shows.css.map */

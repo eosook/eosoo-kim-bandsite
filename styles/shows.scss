@@ -57,6 +57,7 @@
         @include tablet{
             display: flex;
             justify-content: space-between;
+            align-items: center;
         }
 
         &--subheader{
@@ -64,6 +65,10 @@
             font-family: avenirRegular;
             color: $primary-silver;
             text-transform: uppercase;
+
+            @include tablet{
+                display: none;
+            }
         }
     
         &--body{
@@ -89,6 +94,23 @@
                 font-family: avenirRegular;
                 height: 50px;
                 width: 180px;
+            }
+        }
+    }
+
+    &__section{
+        width: 25%;
+    }
+
+    &--firstbar{
+        @include tablet{
+            .shows__bar--subheader{
+                display: block;
+                padding-bottom: 2rem;
+            }
+    
+            .shows__bar--button{
+                margin-top: 2rem;
             }
         }
     }
