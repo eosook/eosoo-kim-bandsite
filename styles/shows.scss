@@ -52,6 +52,7 @@
     @include desktop{
         display: flex;
         padding: 3rem 6rem;
+        justify-content: space-between;
     }
 
     &__header{
@@ -69,6 +70,11 @@
             justify-content: space-between;
             align-items: center;
             padding-bottom: 0;
+        }
+
+        @include desktop{
+            width: 900px;
+            padding-top: 1rem;
         }
 
         &--subheader{
@@ -120,14 +126,30 @@
     }
 
     &--firstbar{
-        @include tablet{
-            .shows__bar--subheader{
-            display: block;
-            padding-bottom: 2rem;
+        .shows__bar--subheader{
+            @include tablet{
+                display: block;
+                padding-bottom: 2rem;
             }
 
-            .shows__bar--button{
+            @include desktop{
+                padding-bottom: 3rem;
+            }
+        }
+
+        .shows__bar--body{
+            @include desktop{
+                padding-bottom: 1rem;
+            }
+        }
+
+        .shows__bar--button{
+            @include tablet{
                 margin-top: 3rem;
+            }
+
+            @include desktop{
+                margin-top: 4rem;
             }
         }
     }
