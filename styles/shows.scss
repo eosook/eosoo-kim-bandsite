@@ -34,7 +34,7 @@
 
     &__subheader{
         @include fontSubHeader;
-        @include paddingAfter(0);
+        padding: 1rem 0;
         font-weight: 400;
     }
 
@@ -46,11 +46,11 @@
 
         @include tablet{
             width: 800px;
+            padding: 0;
         }
 
         @include desktop{
             width: 600px;
-            padding: 0;
         }
     }
 
@@ -83,19 +83,27 @@
     }
 
     &__bar{
-        @include paddingAfter(1rem);
+        padding: 1rem;
         border-bottom: 1px solid $secondary-mercury;
+
+        &:hover{
+            background-color: $secondary-alabaster;
+        }
+
+        &:active{
+            background-color: $secondary-mercury;
+        }
 
         @include tablet{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-bottom: 0;
+            padding: 1.5rem 1.125rem;
         }
 
         @include desktop{
             width: 900px;
-            padding-top: 1rem;
+
         }
 
         &--subheader{
@@ -113,7 +121,8 @@
             padding-bottom: 1rem;
 
             @include tablet{
-                font-size: 1.125rem
+                font-size: 1.125rem;
+                padding-bottom: 0;
             }
         }
     
@@ -135,7 +144,6 @@
                 font-size: 1.25rem;
                 height: 50px;
                 width: 180px;
-                margin-bottom: 1rem;
             }
         }
     }
@@ -167,10 +175,6 @@
         .shows__bar--button{
             @include tablet{
                 margin-top: 3rem;
-            }
-
-            @include desktop{
-                margin-top: 4rem;
             }
         }
     }
