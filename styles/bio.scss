@@ -92,6 +92,11 @@ img{
             }
         }
     }
+
+    &__link{
+        text-decoration: none;
+        color: inherit;
+    }
 }
 
 .hero{

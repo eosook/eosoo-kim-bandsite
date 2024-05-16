@@ -105,6 +105,10 @@ img {
   color: #FFFFFF;
   font-weight: 600;
 }
+.header__link {
+  text-decoration: none;
+  color: inherit;
+}
 
 .hero {
   background: url(../assets/images/hero-bio.jpg) center no-repeat;
