@@ -152,7 +152,7 @@
 }
 @media (min-width: 1280px) {
   .shows__bar {
-    width: 900px;
+    width: 100%;
   }
 }
 .shows__bar--subheader {
@@ -246,5 +246,13 @@
 @media (min-width: 768px) {
   .shows--firstbar .shows__bar--button {
     margin-top: 3rem;
+  }
+}
+.shows__container {
+  width: 100%;
+}
+@media (min-width: 1280px) {
+  .shows__container {
+    padding-left: 4rem;
   }
 }/*# sourceMappingURL=shows.css.map */

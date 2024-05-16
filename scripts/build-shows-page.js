@@ -39,7 +39,7 @@ showsHeader.classList.add('shows__header');
 shows.appendChild(showsHeader);
 
 let showsContainer = document.createElement('div');
-showsContainer.classList.add("shows--container");
+showsContainer.classList.add("shows__container");
 shows.appendChild(showsContainer);
 
 function createBar(key, showKey, showBar){
@@ -62,7 +62,6 @@ function createBar(key, showKey, showBar){
     showBarSection.append(dateSubHeader, dateInfo);
     showBarSection.classList.add('shows__section')
     showBar.append(showBarSection);
-    console.log(showBar);
 }
 
 showsList.forEach((show, i) => {
