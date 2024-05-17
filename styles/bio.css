@@ -71,7 +71,6 @@ img {
   }
 }
 .header__nav--page {
-  width: 50%;
   list-style-type: none;
   box-sizing: border-box;
   padding-bottom: 0.6875rem;
@@ -106,6 +105,7 @@ img {
   font-weight: 600;
 }
 .header__link {
+  width: 50%;
   text-decoration: none;
   color: inherit;
 }
