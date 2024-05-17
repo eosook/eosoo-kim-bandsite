@@ -114,7 +114,7 @@ img{
 
     &__text{
         @include fontHeader;
-        font-family: avenirDemi;
+        font-weight: 600;
         background-color: rgba(0, 0, 0, 0.5);
         width: 100%;
         height: 100%;
@@ -145,7 +145,6 @@ img{
 
     &__header{
         @include fontHeader;
-        font-family: avenirDemi;
         padding: 1.5rem 0 1rem;
 
         @include tablet{
@@ -186,7 +185,7 @@ img{
 
         &--author{
             @include fontBody;
-            font-family: avenirDemi;
+            font-weight: 600;
             margin: 1rem 0;
         }
     }
@@ -234,7 +233,7 @@ img{
 
     &__title{
         @include fontHeader;
-        font-family: avenirDemi;
+        font-weight: 600;
         padding: 1.5rem 0 1rem;
 
         @include tablet{
@@ -321,10 +320,75 @@ img{
 .comments{
     @include paddingBefore;
 
+    &__header{
+        @include fontHeader;
+        font-weight: 600;
+
+        @include tablet{
+            font-size: 2.5rem;
+        }
+    }
+
+    &__divider{
+        @include paddingAfter(0);
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__form{
+        width: 100%;
+    }
+
+    &--input{
+        width: 100%;
+        border-radius: 4px;
+        height: 36px;
+        padding: 0.75rem;
+        margin: 0.25rem 0 1rem;
+        border: 1px solid $secondary-mercury;
+        background-color: $secondary-alabaster;
+
+        @include tablet{
+            height: 48px;
+            padding: 1rem;
+        }
+
+        &:active{
+            border: 1px solid $primary-black;
+        }
+
+        &::placeholder{
+            color: $primary-black;
+        }
+    }
+
+    &__label{
+        @include fontLabels;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $primary-silver;
+        display: block;
+    }
+
+    &__button{
+        display: block;
+        width: 100%;
+        height: 40px;
+        border-radius: 4px;
+        background-color: $primary-black;
+        color: $primary-white;
+        text-transform: uppercase;
+
+        @include tablet{
+            width: 150px;
+        }
+    }
+
     &__image{
         width: 36px;
         height: 36px;
         border-radius: 50%;
+        margin: 1.5rem 1rem;
 
         @include tablet{
             width: 48px;

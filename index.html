@@ -79,14 +79,16 @@
         </section>
         <section class="comments">
             <h2 class="comments__header">Join the Conversation</h2>
-            <img class="comments__image" src="./assets/images/Mohan-muruge.jpg" alt="profile picture"/>
-            <form>
-                <label for="comments__name">name</label>
-                <input class="comments__name" type="text"/>
-                <label for="comments__comment">comment</label>
-                <input class="comments__comment" type="textarea"/>
-                <button type="submit">comment</button>
-            </form>
+            <div class="comments__divider">
+                <img class="comments__image" src="./assets/images/Mohan-muruge.jpg" alt="profile picture"/>
+                <form class="comments__form">
+                    <label class="comments__label" for="comments__name">name</label>
+                    <input class="comments__name comments--input" type="text" placeholder="Enter your name"/>
+                    <label class="comments__label" for="comments__comment">comment</label>
+                    <input class="comments__comment comments--input" type="textarea" placeholder="Add a new comment"/>
+                    <button class="comments__button" type="submit">comment</button>
+                </form>
+            </div>
         </section>
     </main>
     <footer class="info">

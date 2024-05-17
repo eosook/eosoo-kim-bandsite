@@ -127,7 +127,7 @@ img {
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 2rem;
-  font-family: avenirDemi;
+  font-weight: 600;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
@@ -170,7 +170,6 @@ img {
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 2rem;
-  font-family: avenirDemi;
   padding: 1.5rem 0 1rem;
 }
 @media (min-width: 768px) {
@@ -229,7 +228,7 @@ img {
   font-weight: 400;
   font-size: 0.8125rem;
   line-height: 1.25rem;
-  font-family: avenirDemi;
+  font-weight: 600;
   margin: 1rem 0;
 }
 @media (min-width: 768px) {
@@ -300,7 +299,7 @@ img {
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 2rem;
-  font-family: avenirDemi;
+  font-weight: 600;
   padding: 1.5rem 0 1rem;
 }
 @media (min-width: 768px) {
@@ -394,10 +393,96 @@ img {
     padding: 3rem 2.25rem;
   }
 }
+.comments__header {
+  font-family: avenir;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  .comments__header {
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+  }
+}
+@media (min-width: 768px) {
+  .comments__header {
+    font-size: 2.5rem;
+  }
+}
+.comments__divider {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .comments__divider {
+    padding: 2.25rem 0;
+  }
+}
+.comments__form {
+  width: 100%;
+}
+.comments--input {
+  width: 100%;
+  border-radius: 4px;
+  height: 36px;
+  padding: 0.75rem;
+  margin: 0.25rem 0 1rem;
+  border: 1px solid #E1E1E1;
+  background-color: #FAFAFA;
+}
+@media (min-width: 768px) {
+  .comments--input {
+    height: 48px;
+    padding: 1rem;
+  }
+}
+.comments--input:active {
+  border: 1px solid #323232;
+}
+.comments--input::-moz-placeholder {
+  color: #323232;
+}
+.comments--input::placeholder {
+  color: #323232;
+}
+.comments__label {
+  font-family: avenir;
+  font-weight: 700;
+  font-size: 0.625rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #AFAFAF;
+  display: block;
+}
+@media (min-width: 768px) {
+  .comments__label {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+  }
+}
+.comments__button {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #323232;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .comments__button {
+    width: 150px;
+  }
+}
 .comments__image {
   width: 36px;
   height: 36px;
   border-radius: 50%;
+  margin: 1.5rem 1rem;
 }
 @media (min-width: 768px) {
   .comments__image {
