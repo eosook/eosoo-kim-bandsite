@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/bio.css">
+    <script src="./scripts/index-page.js" defer></script>
     <title>Bandsite - Eo Soo Kim</title>
 </head>
 <body>
     <header class="header">
-        <a href="./index.html" alt="bandsite logo"><img class="bandsite--logo" src="/assets/logo/Logo-bandsite.svg" alt="site logo"></a>
+        <a href="../index.html" alt="bandsite logo"><img class="bandsite--logo" src="/assets/logo/Logo-bandsite.svg" alt="site logo"></a>
         <nav class="header__nav">
             <ul class="header__nav--list">
-                <li class="header__nav--page">Biography</li>
-                <li class="header__nav--page">Shows</li>
+                <a class="header__link" href="./index.html"><li class="header__nav--page">Biography</li></a>
+                <a class="header__link" href="./pages/shows.html"><li class="header__nav--page">Shows</li></a>
             </ul>
         </nav>
     </header>
@@ -75,6 +76,17 @@
                 <div class="gallery__photo8 gallery__photo"><div class="gallery__photo--shade"></div></div>
                 <div class="gallery__photo9 gallery__photo"><div class="gallery__photo--shade"></div></div>
             </div>
+        </section>
+        <section class="comments">
+            <h2 class="comments__header">Join the Conversation</h2>
+            <img class="comments__image" src="./assets/images/Mohan-muruge.jpg" alt="profile picture"/>
+            <form>
+                <label for="comments__name">name</label>
+                <input class="comments__name" type="text"/>
+                <label for="comments__comment">comment</label>
+                <input class="comments__comment" type="textarea"/>
+                <button type="submit">comment</button>
+            </form>
         </section>
     </main>
     <footer class="info">
