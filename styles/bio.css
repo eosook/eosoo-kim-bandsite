@@ -430,13 +430,13 @@ img {
   }
 }
 .comments__container {
-  padding: 1rem 0.25rem;
+  padding: 1rem 0;
   display: flex;
   border-bottom: 1px solid #E1E1E1;
 }
 @media (min-width: 768px) {
   .comments__container {
-    padding: 2.25rem 0.25rem;
+    padding: 2.25rem 0;
   }
 }
 .comments__container .comments__photo {
@@ -446,6 +446,7 @@ img {
   .comments__container {
     width: 600px;
     margin: 0 auto;
+    padding: 1.5rem 0;
   }
 }
 .comments__info {
@@ -454,6 +455,7 @@ img {
   font-size: 0.8125rem;
   line-height: 1.25rem;
   width: 100%;
+  padding: 0 0.25rem;
 }
 @media (min-width: 768px) {
   .comments__info {

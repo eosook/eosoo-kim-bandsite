@@ -31,15 +31,14 @@ function createComment(comment){
     commentContainer.classList.add("comments__container");
     let commentContainerInfo = document.createElement("div");
     commentContainerInfo.classList.add("comments__info");
-    let commentPhoto = document.createElement("div");
-    commentPhoto.classList.add("comments__photo");
+    createCommentElement("div", "comments__photo", "" , commentContainer)
     let commentDiv = document.createElement("div");
     commentDiv.classList.add("comments--flex");
     createCommentElement("p", "comments__name", comment.name, commentDiv);
     createCommentElement("p", "comments__date", comment.date, commentDiv);
     commentContainerInfo.appendChild(commentDiv);
     createCommentElement("p", "comments__comment", comment.comment, commentContainerInfo);
-    commentContainer.append(commentPhoto, commentContainerInfo);
+    commentContainer.append(commentContainerInfo);
     commentSection.prepend(commentContainer);
 }
 
@@ -50,7 +49,6 @@ comments.forEach((comment) => {
 commentForm.addEventListener("submit", (e) => {
     e.preventDefault();
     const date = new Date();
-    console.log(date);
     comments.unshift({
         name: e.target.personName.value,
         comment: e.target.personComment.value,

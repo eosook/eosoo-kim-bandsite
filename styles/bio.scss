@@ -343,7 +343,7 @@ img{
     }
 
     &__container{
-        @include paddingAfter(0.25rem);
+        @include paddingAfter(0);
         display: flex;
         border-bottom: 1px solid $secondary-mercury;
 
@@ -354,12 +354,14 @@ img{
         @include tablet{
             width: 600px;
             margin: 0 auto;
+            padding: 1.5rem 0;
         }
     }
 
     &__info{
         @include fontBody;
         width: 100%;
+        padding: 0 0.25rem;
     }
 
     &__form{
