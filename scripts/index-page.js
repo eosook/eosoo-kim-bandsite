@@ -1,8 +1,8 @@
 let comments = [
     {
-        name: "Victor Pinto",
-        comment: "This is art. This is inexplicable magic expressed in the purest way, everything that makes up this majestic work deserves reverence. Let us appreciate this for what it is and what it contains.",
-        date: "11/02/2023"
+        name: "Isaac Tadesse",
+        comment: "I can't stop listening. Every time I hear one of their songs - the vocals - it gives me goosebumps. Shivers straight down my spine. What a beautiful expression of creativity. Can't get enough.",
+        date: "10/20/2023"
     },
     {
         name: "Christina Cabrera",
@@ -10,13 +10,14 @@ let comments = [
         date: "10/28/2023"
     },
     {
-        name: "Isaac Tadesse",
-        comment: "I can't stop listening. Every time I hear one of their songs - the vocals - it gives me goosebumps. Shivers straight down my spine. What a beautiful expression of creativity. Can't get enough.",
-        date: "10/20/2023"
+        name: "Victor Pinto",
+        comment: "This is art. This is inexplicable magic expressed in the purest way, everything that makes up this majestic work deserves reverence. Let us appreciate this for what it is and what it contains.",
+        date: "11/02/2023"
     }
 ]
 
-const commentSection = document.querySelector(".comments");
+const commentSection = document.querySelector(".comments__list");
+const commentForm = document.querySelector(".comments__form");
 
 function createCommentElement(type, className, text, parent){
     let commentElement = document.createElement(type);
@@ -39,9 +40,21 @@ function createComment(comment){
     commentContainerInfo.appendChild(commentDiv);
     createCommentElement("p", "comments__comment", comment.comment, commentContainerInfo);
     commentContainer.append(commentPhoto, commentContainerInfo);
-    commentSection.appendChild(commentContainer);
+    commentSection.prepend(commentContainer);
 }
 
 comments.forEach((comment) => {
     createComment(comment);
+})
+
+commentForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const date = new Date();
+    console.log(date);
+    comments.unshift({
+        name: e.target.personName.value,
+        comment: e.target.personComment.value,
+        date: `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`
+    })
+    createComment(comments[0]);
 })
