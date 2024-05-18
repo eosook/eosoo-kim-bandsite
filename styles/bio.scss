@@ -326,6 +326,7 @@ img{
 
         @include tablet{
             font-size: 2.5rem;
+            line-height: 2rem;
         }
     }
 
@@ -333,6 +334,32 @@ img{
         @include paddingAfter(0);
         display: flex;
         justify-content: space-between;
+        border-bottom: 1px solid $secondary-mercury;
+
+        @include tablet{
+            width: 600px;
+            margin: 0 auto;
+        }
+    }
+
+    &__container{
+        @include paddingAfter(0.25rem);
+        display: flex;
+        border-bottom: 1px solid $secondary-mercury;
+
+        .comments__photo{
+            margin: 0 1rem 0 0;
+        }
+
+        @include tablet{
+            width: 600px;
+            margin: 0 auto;
+        }
+    }
+
+    &__info{
+        @include fontBody;
+        width: 100%;
     }
 
     &__form{
@@ -384,11 +411,12 @@ img{
         }
     }
 
-    &__image{
+    &__photo{
         width: 36px;
         height: 36px;
         border-radius: 50%;
-        margin: 1.5rem 1rem;
+        margin: 1.5rem 1rem 0 0;
+        background-color: $primary-silver;
 
         @include tablet{
             width: 48px;
@@ -399,6 +427,15 @@ img{
     &--flex{
         display: flex;
         justify-content: space-between;
+        padding-bottom: 0.75rem;
+    }
+
+    &__name{
+        font-weight: 600;
+    }
+
+    &__date{
+        color: $primary-silver;
     }
 }
 

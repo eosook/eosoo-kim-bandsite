@@ -27,13 +27,19 @@ function createCommentElement(type, className, text, parent){
 
 function createComment(comment){
     let commentContainer = document.createElement("div");
+    commentContainer.classList.add("comments__container");
+    let commentContainerInfo = document.createElement("div");
+    commentContainerInfo.classList.add("comments__info");
+    let commentPhoto = document.createElement("div");
+    commentPhoto.classList.add("comments__photo");
     let commentDiv = document.createElement("div");
     commentDiv.classList.add("comments--flex");
     createCommentElement("p", "comments__name", comment.name, commentDiv);
     createCommentElement("p", "comments__date", comment.date, commentDiv);
-    commentContainer.appendChild(commentDiv);
-    createCommentElement("p", "comments__comment", comment.comment, commentContainer);
-    commentSection.append(commentContainer);
+    commentContainerInfo.appendChild(commentDiv);
+    createCommentElement("p", "comments__comment", comment.comment, commentContainerInfo);
+    commentContainer.append(commentPhoto, commentContainerInfo);
+    commentSection.appendChild(commentContainer);
 }
 
 comments.forEach((comment) => {

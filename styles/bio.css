@@ -409,16 +409,56 @@ img {
 @media (min-width: 768px) {
   .comments__header {
     font-size: 2.5rem;
+    line-height: 2rem;
   }
 }
 .comments__divider {
   padding: 1rem 0;
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid #E1E1E1;
 }
 @media (min-width: 768px) {
   .comments__divider {
     padding: 2.25rem 0;
+  }
+}
+@media (min-width: 768px) {
+  .comments__divider {
+    width: 600px;
+    margin: 0 auto;
+  }
+}
+.comments__container {
+  padding: 1rem 0.25rem;
+  display: flex;
+  border-bottom: 1px solid #E1E1E1;
+}
+@media (min-width: 768px) {
+  .comments__container {
+    padding: 2.25rem 0.25rem;
+  }
+}
+.comments__container .comments__photo {
+  margin: 0 1rem 0 0;
+}
+@media (min-width: 768px) {
+  .comments__container {
+    width: 600px;
+    margin: 0 auto;
+  }
+}
+.comments__info {
+  font-family: avenir;
+  font-weight: 400;
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .comments__info {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
   }
 }
 .comments__form {
@@ -478,14 +518,15 @@ img {
     width: 150px;
   }
 }
-.comments__image {
+.comments__photo {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  margin: 1.5rem 1rem;
+  margin: 1.5rem 1rem 0 0;
+  background-color: #AFAFAF;
 }
 @media (min-width: 768px) {
-  .comments__image {
+  .comments__photo {
     width: 48px;
     height: 48px;
   }
@@ -493,6 +534,13 @@ img {
 .comments--flex {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 0.75rem;
+}
+.comments__name {
+  font-weight: 600;
+}
+.comments__date {
+  color: #AFAFAF;
 }
 
 .info {
