@@ -222,6 +222,9 @@
     width: 180px;
   }
 }
+.shows__bar--button:hover {
+  cursor: pointer;
+}
 @media (min-width: 768px) {
   .shows__section {
     width: 25%;
