@@ -506,6 +506,9 @@ img {
     line-height: 1.25rem;
   }
 }
+.comments__comment {
+  height: 100px;
+}
 .comments__button {
   display: block;
   width: 100%;
