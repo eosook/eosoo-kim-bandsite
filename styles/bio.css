@@ -508,6 +508,7 @@ img {
 }
 .comments__comment {
   height: 100px;
+  overflow-wrap: break-word;
 }
 .comments__button {
   display: block;
@@ -517,6 +518,8 @@ img {
   background-color: #323232;
   color: #FFFFFF;
   text-transform: uppercase;
+  display: absolute;
+  right: 0;
 }
 @media (min-width: 768px) {
   .comments__button {
@@ -532,7 +535,7 @@ img {
 }
 @media (min-width: 768px) {
   .comments__photo {
-    width: 48px;
+    min-width: 48px;
     height: 48px;
   }
 }

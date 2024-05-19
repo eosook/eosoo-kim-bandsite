@@ -31,7 +31,7 @@ function createComment(comment){
     commentContainer.classList.add("comments__container");
     let commentContainerInfo = document.createElement("div");
     commentContainerInfo.classList.add("comments__info");
-    createCommentElement("div", "comments__photo", "" , commentContainer)
+    createCommentElement("div", "comments__photo", " " , commentContainer)
     let commentDiv = document.createElement("div");
     commentDiv.classList.add("comments--flex");
     createCommentElement("p", "comments__name", comment.name, commentDiv);

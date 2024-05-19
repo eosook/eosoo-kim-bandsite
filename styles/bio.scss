@@ -401,6 +401,7 @@ img{
 
     &__comment{
         height: 100px;
+        overflow-wrap: break-word;
     }
 
     &__button{
@@ -411,6 +412,8 @@ img{
         background-color: $primary-black;
         color: $primary-white;
         text-transform: uppercase;
+        display: absolute;
+        right: 0;
 
         @include tablet{
             width: 150px;
@@ -425,7 +428,7 @@ img{
         background-color: $primary-silver;
 
         @include tablet{
-            width: 48px;
+            min-width: 48px;
             height: 48px;
         }
     }
