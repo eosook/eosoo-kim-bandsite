@@ -80,13 +80,13 @@
 }
 @media (min-width: 768px) {
   .hero__header {
-    width: 800px;
+    width: 600px;
     padding: 0;
   }
 }
 @media (min-width: 1280px) {
   .hero__header {
-    width: 600px;
+    width: 500px;
   }
 }
 .hero__soundcloud {
@@ -99,7 +99,12 @@
 }
 @media (min-width: 768px) {
   .hero__soundcloud {
-    width: 500px;
+    width: 400px;
+  }
+}
+@media (min-width: 1280px) {
+  .hero__soundcloud {
+    margin-top: 5rem;
   }
 }
 
@@ -132,6 +137,12 @@
     line-height: 4.25rem;
   }
 }
+@media (min-width: 1280px) {
+  .shows__header {
+    font-size: 2.5rem;
+    padding-right: 5rem;
+  }
+}
 .shows__bar {
   padding: 1rem;
   border-bottom: 1px solid #E1E1E1;
@@ -160,6 +171,7 @@
   font-weight: 700;
   font-size: 0.625rem;
   line-height: 1.25rem;
+  font-weight: 400;
   color: #AFAFAF;
   text-transform: uppercase;
 }
@@ -201,13 +213,17 @@
   font-weight: 600;
   font-size: 0.875rem;
   line-height: 1.375rem;
+  height: 40px;
   background-color: #323232;
   color: #FFFFFF;
   text-transform: uppercase;
-  border-radius: 5px;
+  border-radius: 4px;
   width: 100%;
   padding: 0.5rem;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media (min-width: 768px) {
   .shows__bar--button {
@@ -217,9 +233,8 @@
 }
 @media (min-width: 768px) {
   .shows__bar--button {
-    font-size: 1.25rem;
-    height: 50px;
-    width: 180px;
+    font-size: 1rem;
+    width: 150px;
   }
 }
 .shows__bar--button:hover {
