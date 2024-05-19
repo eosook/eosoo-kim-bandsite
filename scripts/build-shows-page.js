@@ -64,10 +64,18 @@ function createBar(key, showKey, showBar){
     showBar.append(showBarSection);
 }
 
+let activeBarExists = false;
+
 showsList.forEach((show, i) => {
     let showBar = document.createElement('div');
-    showBar.classList.add("shows__bar")
-
+    showBar.classList.add("shows__bar");
+    showBar.addEventListener("click", () =>{
+        if (activeBarExists){
+            document.querySelector(".shows__bar--active").classList.remove("shows__bar--active");
+        }
+        showBar.classList.add("shows__bar--active");
+        activeBarExists = true;
+    })
     // create date section
     createBar('date', show.date, showBar);
     // create venue section

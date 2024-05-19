@@ -139,7 +139,7 @@
 .shows__bar:hover {
   background-color: #FAFAFA;
 }
-.shows__bar:active {
+.shows__bar--active {
   background-color: #E1E1E1;
 }
 @media (min-width: 768px) {
