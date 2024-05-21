@@ -18,7 +18,7 @@ let comments = [
 ]
 
 const commentSection = document.querySelector(".comments__list");
-const commentForm = document.querySelector(".comments__form");
+const commentForm = document.querySelector(".form");
 
 function createCommentElement(type, className, text, parent){
     let commentElement = document.createElement(type);

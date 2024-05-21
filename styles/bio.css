@@ -24,7 +24,7 @@ img {
   width: 100vw;
 }
 
-.bandsite--logo {
+.bandsite__logo {
   width: 120px;
   height: 20px;
 }
@@ -47,11 +47,11 @@ img {
     padding: 0 9.375rem;
   }
 }
-.header .bandsite--logo {
+.header .bandsite__logo {
   margin: 1rem 0 0.5rem;
 }
 @media (min-width: 768px) {
-  .header .bandsite--logo {
+  .header .bandsite__logo {
     margin: 0;
   }
 }
@@ -63,7 +63,6 @@ img {
 }
 .header__list {
   display: flex;
-  color: #E1E1E1;
 }
 @media (min-width: 768px) {
   .header__list {
@@ -101,13 +100,15 @@ img {
   }
 }
 .header__page:active {
-  color: #FFFFFF;
   font-weight: 600;
 }
-.header--link {
+.header__link {
   width: 50%;
   text-decoration: none;
-  color: inherit;
+  color: #E1E1E1;
+}
+.header__link:active {
+  color: #FFFFFF;
 }
 
 .hero {
@@ -153,6 +154,7 @@ img {
 }
 
 .about {
+  color: #323232;
   padding: 0 1rem;
 }
 @media (min-width: 768px) {
@@ -185,12 +187,12 @@ img {
   }
 }
 @media (min-width: 768px) {
-  .about--body {
+  .about__body {
     padding: 0 3rem;
   }
 }
 @media (min-width: 1280px) {
-  .about--body {
+  .about__body {
     padding: 0 5.4375rem;
   }
 }
@@ -203,27 +205,27 @@ img {
     height: 70%;
   }
 }
-.about__quote {
+.about .band-quote {
   padding: 1rem 0;
 }
 @media (min-width: 768px) {
-  .about__quote {
+  .about .band-quote {
     padding: 2rem 0 1.125rem;
   }
 }
-.about__quote--quote {
+.about .band-quote__quote {
   font-family: avenir;
   font-weight: 600;
   font-size: 0.875rem;
   line-height: 1.375rem;
 }
 @media (min-width: 768px) {
-  .about__quote--quote {
+  .about .band-quote__quote {
     font-size: 1.5rem;
     line-height: 2rem;
   }
 }
-.about__quote--author {
+.about .band-quote__author {
   font-family: avenir;
   font-weight: 400;
   font-size: 0.8125rem;
@@ -232,7 +234,7 @@ img {
   margin: 1rem 0;
 }
 @media (min-width: 768px) {
-  .about__quote--author {
+  .about .band-quote__author {
     font-size: 0.875rem;
     line-height: 1.375rem;
   }
@@ -283,6 +285,7 @@ img {
 .gallery {
   padding: 0 1rem;
   background-color: #FAFAFA;
+  color: #323232;
 }
 @media (min-width: 768px) {
   .gallery {
@@ -349,7 +352,6 @@ img {
   background-color: rgba(0, 0, 0, 0);
 }
 .gallery__photo1 {
-  background: url(../assets/images/Photo-gallery-1.jpg) no-repeat;
   background-size: 100% 100%;
 }
 .gallery__photo2 {
@@ -463,34 +465,10 @@ img {
     line-height: 1.375rem;
   }
 }
-.comments__form {
+.comments .form {
   width: 100%;
 }
-.comments--input {
-  width: 100%;
-  border-radius: 4px;
-  height: 36px;
-  padding: 0.75rem;
-  margin: 0.25rem 0 1rem;
-  border: 1px solid #E1E1E1;
-  background-color: #FAFAFA;
-}
-@media (min-width: 768px) {
-  .comments--input {
-    height: 48px;
-    padding: 1rem;
-  }
-}
-.comments--input:active {
-  border: 1px solid #323232;
-}
-.comments--input::-moz-placeholder {
-  color: #323232;
-}
-.comments--input::placeholder {
-  color: #323232;
-}
-.comments__label {
+.comments .form__label {
   font-family: avenir;
   font-weight: 700;
   font-size: 0.625rem;
@@ -501,16 +479,17 @@ img {
   display: block;
 }
 @media (min-width: 768px) {
-  .comments__label {
+  .comments .form__label {
     font-size: 0.75rem;
     line-height: 1.25rem;
   }
 }
-.comments__comment {
+.comments .form__comment {
   height: 100px;
   overflow-wrap: break-word;
+  resize: none;
 }
-.comments__button {
+.comments .form__button {
   display: block;
   width: 100%;
   height: 40px;
@@ -522,9 +501,33 @@ img {
   right: 0;
 }
 @media (min-width: 768px) {
-  .comments__button {
+  .comments .form__button {
     width: 150px;
   }
+}
+.comments .form__input {
+  width: 100%;
+  border-radius: 4px;
+  height: 36px;
+  padding: 0.75rem;
+  margin: 0.25rem 0 1rem;
+  border: 1px solid #E1E1E1;
+  background-color: #FAFAFA;
+}
+@media (min-width: 768px) {
+  .comments .form__input {
+    height: 48px;
+    padding: 1rem;
+  }
+}
+.comments .form__input:active {
+  border: 1px solid #323232;
+}
+.comments .form__input::-moz-placeholder {
+  color: #323232;
+}
+.comments .form__input::placeholder {
+  color: #323232;
 }
 .comments__photo {
   width: 36px;
@@ -566,18 +569,21 @@ img {
     padding: 0 9.375rem;
   }
 }
-.info--div {
+.info__div {
   position: relative;
 }
+.info__div .bandsite__logo {
+  margin: 3rem 0px 1rem;
+}
 @media (min-width: 768px) {
-  .info--div .bandsite--logo {
+  .info__div .bandsite__logo {
     position: absolute;
     top: 12px;
     right: 0;
   }
 }
 @media (min-width: 768px) {
-  .info--bar {
+  .info__bar {
     display: flex;
     align-items: center;
     padding: 3rem 0 1.5rem;
@@ -618,45 +624,42 @@ img {
   height: 25px;
   width: 25px;
 }
-.info__affiliates {
+.info .affiliates {
   font-family: avenir;
   font-weight: 400;
   font-size: 0.875rem;
 }
 @media (min-width: 768px) {
-  .info__affiliates {
+  .info .affiliates {
     display: flex;
   }
 }
 @media (min-width: 1280px) {
-  .info__affiliates {
+  .info .affiliates {
     width: 70%;
   }
 }
-.info__affiliates--subheader {
+.info .affiliates__subheader {
   font-family: avenir;
   font-weight: 400;
   font-size: 0.875rem;
   padding: 1rem 0;
 }
 @media (min-width: 768px) {
-  .info__affiliates--subheader {
+  .info .affiliates__subheader {
     padding: 1.5rem 0;
   }
 }
-.info__affiliates--body {
+.info .affiliates__body {
   margin-bottom: 0.25rem;
 }
-.info__affiliates--email {
+.info .affiliates__email {
   padding: 1rem 0;
 }
 @media (min-width: 768px) {
-  .info__affiliates--email {
+  .info .affiliates__email {
     padding: 1.5rem 0;
   }
-}
-.info .bandsite--logo {
-  margin: 3rem 0px 1rem;
 }
 .info__copyright {
   font-family: avenir;
@@ -677,7 +680,7 @@ img {
   }
 }
 @media (min-width: 768px) {
-  .info--section {
+  .info__section {
     padding-right: 4.5rem;
   }
 }/*# sourceMappingURL=bio.css.map */

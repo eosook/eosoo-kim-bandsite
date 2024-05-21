@@ -14,7 +14,7 @@ img {
   width: 100vw;
 }
 
-.bandsite--logo {
+.bandsite__logo {
   width: 120px;
   height: 20px;
 }
@@ -35,7 +35,7 @@ img {
     padding: 0 9.375rem;
   }
 
-  .bandsite--logo {
+  .bandsite__logo {
     margin: 1rem 0 0.5rem;
 
     @include tablet {
@@ -52,7 +52,6 @@ img {
 
   &__list {
     display: flex;
-    color: $secondary-mercury;
 
     @include tablet {
       height: 100%;
@@ -88,15 +87,18 @@ img {
     }
 
     &:active {
-      color: $primary-white;
       font-weight: 600;
     }
   }
 
-  &--link {
+  &__link {
     width: 50%;
     text-decoration: none;
-    color: inherit;
+    color: $secondary-mercury;
+
+    &:active {
+      color: $primary-white;
+    }
   }
 }
 
@@ -132,6 +134,7 @@ img {
 }
 
 .about {
+  color: $primary-black;
   padding: 0 1rem;
 
   @include tablet {
@@ -152,7 +155,7 @@ img {
     }
   }
 
-  &--body {
+  &__body {
     @include tablet {
       padding: 0 3rem;
     }
@@ -171,18 +174,18 @@ img {
     }
   }
 
-  &__quote {
+  .band-quote {
     padding: 1rem 0;
 
     @include tablet {
       padding: 2rem 0 1.125rem;
     }
 
-    &--quote {
+    &__quote {
       @include fontSubHeader;
     }
 
-    &--author {
+    &__author {
       @include fontBody;
       font-weight: 600;
       margin: 1rem 0;
@@ -221,6 +224,7 @@ img {
 .gallery {
   padding: 0 1rem;
   background-color: $secondary-alabaster;
+  color: $primary-black;
 
   @include tablet {
     padding: 0 2.25rem;
@@ -278,7 +282,6 @@ img {
   }
 
   &__photo1 {
-    background: url(../assets/images/Photo-gallery-1.jpg) no-repeat;
     background-size: 100% 100%;
   }
 
@@ -363,59 +366,60 @@ img {
     padding: 0 0.25rem;
   }
 
-  &__form {
+  .form {
     width: 100%;
-  }
 
-  &--input {
-    width: 100%;
-    border-radius: 4px;
-    height: 36px;
-    padding: 0.75rem;
-    margin: 0.25rem 0 1rem;
-    border: 1px solid $secondary-mercury;
-    background-color: $secondary-alabaster;
-
-    @include tablet {
-      height: 48px;
-      padding: 1rem;
+    &__label {
+      @include fontLabels;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: $primary-silver;
+      display: block;
     }
 
-    &:active {
-      border: 1px solid $primary-black;
+    &__comment {
+      height: 100px;
+      overflow-wrap: break-word;
+      resize: none;
     }
 
-    &::placeholder {
-      color: $primary-black;
+    &__button {
+      display: block;
+      width: 100%;
+      height: 40px;
+      border-radius: 4px;
+      background-color: $primary-black;
+      color: $primary-white;
+      text-transform: uppercase;
+      display: absolute;
+      right: 0;
+
+      @include tablet {
+        width: 150px;
+      }
     }
-  }
 
-  &__label {
-    @include fontLabels;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: $primary-silver;
-    display: block;
-  }
+    &__input {
+      width: 100%;
+      border-radius: 4px;
+      height: 36px;
+      padding: 0.75rem;
+      margin: 0.25rem 0 1rem;
+      border: 1px solid $secondary-mercury;
+      background-color: $secondary-alabaster;
 
-  &__comment {
-    height: 100px;
-    overflow-wrap: break-word;
-  }
+      @include tablet {
+        height: 48px;
+        padding: 1rem;
+      }
 
-  &__button {
-    display: block;
-    width: 100%;
-    height: 40px;
-    border-radius: 4px;
-    background-color: $primary-black;
-    color: $primary-white;
-    text-transform: uppercase;
-    display: absolute;
-    right: 0;
+      &:active {
+        border: 1px solid $primary-black;
+      }
 
-    @include tablet {
-      width: 150px;
+      &::placeholder {
+        color: $primary-black;
+      }
     }
   }
 
@@ -460,10 +464,12 @@ img {
     padding: 0 9.375rem;
   }
 
-  &--div {
+  &__div {
     position: relative;
 
-    .bandsite--logo {
+    .bandsite__logo {
+      margin: 3rem 0px 1rem;
+
       @include tablet {
         position: absolute;
         top: 12px;
@@ -472,7 +478,7 @@ img {
     }
   }
 
-  &--bar {
+  &__bar {
     @include tablet {
       display: flex;
       align-items: center;
@@ -507,7 +513,7 @@ img {
     }
   }
 
-  &__affiliates {
+  .affiliates {
     @include fontFooter;
 
     @include tablet {
@@ -518,7 +524,7 @@ img {
       width: 70%;
     }
 
-    &--subheader {
+    &__subheader {
       @include fontFooter;
       padding: 1rem 0;
 
@@ -526,20 +532,18 @@ img {
         padding: 1.5rem 0;
       }
     }
-    &--body {
+
+    &__body {
       margin-bottom: 0.25rem;
     }
-    &--email {
+
+    &__email {
       padding: 1rem 0;
 
       @include tablet {
         padding: 1.5rem 0;
       }
     }
-  }
-
-  .bandsite--logo {
-    margin: 3rem 0px 1rem;
   }
 
   &__copyright {
@@ -551,7 +555,7 @@ img {
     }
   }
 
-  &--section {
+  &__section {
     @include tablet {
       padding-right: 4.5rem;
     }
