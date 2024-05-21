@@ -17,7 +17,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: avenir;
+  font-family: avenir, Arial, Helvetica, sans-serif;
 }
 
 img {
@@ -61,23 +61,23 @@ img {
     margin-left: 1.5rem;
   }
 }
-.header__nav--list {
+.header__list {
   display: flex;
-  color: #AFAFAF;
+  color: #E1E1E1;
 }
 @media (min-width: 768px) {
-  .header__nav--list {
+  .header__list {
     height: 100%;
   }
 }
-.header__nav--page {
+.header__page {
   list-style-type: none;
   box-sizing: border-box;
   padding-bottom: 0.6875rem;
   border-bottom: 5px solid transparent;
 }
 @media (min-width: 768px) {
-  .header__nav--page {
+  .header__page {
     margin: 0 1.5rem;
     width: auto;
     height: 100%;
@@ -87,24 +87,24 @@ img {
   }
 }
 @media (min-width: 1280px) {
-  .header__nav--page {
+  .header__page {
     padding: 2.5rem 0;
   }
 }
-.header__nav--page:hover {
+.header__page:hover {
   border-bottom: 5px solid #FFFFFF;
   cursor: pointer;
 }
 @media (min-width: 768px) {
-  .header__nav--page:hover {
+  .header__page:hover {
     border-bottom: 3px solid #FFFFFF;
   }
 }
-.header__nav--page:active {
+.header__page:active {
   color: #FFFFFF;
   font-weight: 600;
 }
-.header__link {
+.header--link {
   width: 50%;
   text-decoration: none;
   color: inherit;
@@ -128,7 +128,7 @@ img {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 600;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(50, 50, 50, 0.5);
   width: 100%;
   height: 100%;
   padding: 1rem;
@@ -196,11 +196,11 @@ img {
 }
 .about__image {
   width: 100%;
-  height: 40vh;
+  height: 40%;
 }
 @media (min-width: 768px) {
   .about__image {
-    height: 70vh;
+    height: 70%;
   }
 }
 .about__quote {
@@ -237,10 +237,10 @@ img {
     line-height: 1.375rem;
   }
 }
-.about__history {
+.about .history {
   padding: 1rem 0;
 }
-.about__history--header {
+.about .history__header {
   font-family: avenir;
   font-weight: 600;
   font-size: 0.875rem;
@@ -248,17 +248,17 @@ img {
   padding-bottom: 1rem;
 }
 @media (min-width: 768px) {
-  .about__history--header {
+  .about .history__header {
     font-size: 1.5rem;
     line-height: 2rem;
   }
 }
 @media (min-width: 768px) {
-  .about__history--body {
+  .about .history__body {
     display: flex;
   }
 }
-.about__history--text {
+.about .history__text {
   padding-right: 1rem;
   font-family: avenir;
   font-weight: 400;
@@ -266,17 +266,17 @@ img {
   line-height: 1.25rem;
 }
 @media (min-width: 768px) {
-  .about__history--text {
+  .about .history__text {
     font-size: 0.875rem;
     line-height: 1.375rem;
   }
 }
 @media (min-width: 768px) {
-  .about__history--text {
+  .about .history__text {
     padding-right: 1.5rem;
   }
 }
-.about__history--text:first-child {
+.about .history__text:first-child {
   margin-bottom: 16px;
 }
 
