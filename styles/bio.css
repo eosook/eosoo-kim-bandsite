@@ -484,11 +484,6 @@ img {
     line-height: 1.25rem;
   }
 }
-.comments .form__comment {
-  height: 100px;
-  overflow-wrap: break-word;
-  resize: none;
-}
 .comments .form__button {
   display: block;
   width: 100%;
@@ -528,6 +523,11 @@ img {
 }
 .comments .form__input::placeholder {
   color: #323232;
+}
+.comments .form__comment {
+  height: 100px;
+  overflow-wrap: break-word;
+  resize: none;
 }
 .comments__photo {
   width: 36px;

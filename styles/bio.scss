@@ -377,12 +377,6 @@ img {
       display: block;
     }
 
-    &__comment {
-      height: 100px;
-      overflow-wrap: break-word;
-      resize: none;
-    }
-
     &__button {
       display: block;
       width: 100%;
@@ -420,6 +414,12 @@ img {
       &::placeholder {
         color: $primary-black;
       }
+    }
+
+    &__comment {
+        height: 100px;
+        overflow-wrap: break-word;
+        resize: none;
     }
   }
 
