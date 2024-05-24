@@ -1,35 +1,3 @@
-// let showsList = [
-//     {
-//         date: "Mon Sept 09 2024",
-//         venue: "Ronald Lane",
-//         location: "San Francisco, CA"
-//     },
-//     {
-//         date: "Tue Sept 17 2024",
-//         venue: "Pier 3 East",
-//         location: "San Francisco, CA"
-//     },
-//     {
-//         date: "Sat Oct 12 2024",
-//         venue: "View Lounge",
-//         location: "San Francisco, CA"
-//     },
-//     {
-//         date: "Sat Nov 16 2024",
-//         venue: "Hyatt Agency",
-//         location: "San Francisco, CA"
-//     },
-//     {
-//         date: "Fri Nov 29 2024",
-//         venue: "Moscow Center",
-//         location: "San Francisco, CA"
-//     },
-//     {
-//         date: "Wed Dec 18 2024",
-//         venue: "Press Club",
-//         location: "San Francisco, CA"
-//     }
-// ]
 import {BandSiteApi} from "./band-site-api.js";
 const myApiKey = "11173e92-77d4-4ea9-bddd-e747183daf47";
 let bandSiteData = new BandSiteApi(myApiKey);
@@ -45,7 +13,7 @@ let showsContainer = document.createElement('div');
 showsContainer.classList.add("shows__container");
 shows.appendChild(showsContainer);
 
-function createBar(key, showKey, showBar){
+function createBarSection(key, showKey, showBar){
     // create bar container
     let showBarSection = document.createElement('div');
     // adds subheader element
@@ -69,37 +37,42 @@ function createBar(key, showKey, showBar){
 
 let activeBarExists = false;
 
-showsList.forEach((show, i) => {
-    let showBar = document.createElement('div');
-    showBar.classList.add("shows__bar");
-    showBar.addEventListener("click", () =>{
-        if (activeBarExists){
-            document.querySelector(".shows__bar--active").classList.remove("shows__bar--active");
-        }
-        showBar.classList.add("shows__bar--active");
-        activeBarExists = true;
-    })
-    // create date section
-    createBar('date', show.date, showBar);
-    // create venue section
-    createBar('venue', show.venue, showBar);
-    // create location section
-    createBar('location', show.location, showBar);
-
-    // creates and adds buy button
-    let buyButton = document.createElement('button');
-    buyButton.innerText = "Buy Tickets"
-    buyButton.classList.add('shows__bar--button');
-
-    //append the date, venue, and location section to the main bar.
-    showBar.append(buyButton);
+async function createBar(){
+    let showsList = await bandSiteData.getShows();
+    showsList.forEach((show, i) => {
+        let showBar = document.createElement('div');
+        console.log(show);
+        showBar.classList.add("shows__bar");
+        showBar.addEventListener("click", () =>{
+            if (activeBarExists){
+                document.querySelector(".shows__bar--active").classList.remove("shows__bar--active");
+            }
+            showBar.classList.add("shows__bar--active");
+            activeBarExists = true;
+        })
+        // create date section
+        const showDate = new Date(show.date);
+        createBarSection('date', showDate.toDateString(), showBar);
+        // create venue section
+        createBarSection('venue', show.place, showBar);
+        // create location section
+        createBarSection('location', show.location, showBar);
     
-    //adds class to only the first bar
-    if(i === 0){
-        showBar.classList.add('shows--firstbar');
-    }
+        // creates and adds buy button
+        let buyButton = document.createElement('button');
+        buyButton.innerText = "Buy Tickets"
+        buyButton.classList.add('shows__bar--button');
+    
+        //append the date, venue, and location section to the main bar.
+        showBar.append(buyButton);
+        
+        //adds class to only the first bar
+        if(i === 0){
+            showBar.classList.add('shows--firstbar');
+        }
+    
+        showsContainer.appendChild(showBar);
+    });
+}
 
-    showsContainer.appendChild(showBar);
-});
-
-async function create
+createBar();
